@@ -15,8 +15,7 @@ namespace BDDCalculator
         public void GivenIHaveACalculator() => _calculator = new Calculator();
         
         [Given(@"I enter (.*) and (.*) into the calculator")]
-        public void GivenIEnterInput1AndInput2IntoTheCalculator(
-            double input1, double input2)
+        public void GivenIEnterInput1AndInput2IntoTheCalculator(double input1, double input2)
         {
             _calculator.Number1 = input1;
             _calculator.Number2 = input2;
@@ -39,6 +38,15 @@ namespace BDDCalculator
         {
             _calculator.Number1 = input;
         }
+
+        [Given(@"I enter a second input number of zero (.*) into the calculator")]
+        public void GivenIEnterASecondInputNumberOfZeroIntoTheCalculator(double input)
+        {
+            _calculator.Number2 = input;
+        }
+
+
+
 
 
         [Given(@"the first input is zero")]

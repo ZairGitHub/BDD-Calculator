@@ -34,17 +34,6 @@ Scenario Outline: Multiply
 	| 0      | 0      | 0      |
 	| 0		 | 1      | 0      |
 
-Scenario Outline: Divide: DivideByZeroError
-	And I enter <input1> and <input2> into the calculator
-	And the second input is equal to zero
-	When I press divide
-	Then the result should display an error message
-	Examples:
-	| input1 | input2 |
-	| -1     | 0      |
-	| 0      | 0      |
-	| 1      | 0      |
-
 Scenario Outline: Divide
 	And I enter <input1> and <input2> into the calculator
 	And the second input is not equal to zero
@@ -54,18 +43,7 @@ Scenario Outline: Divide
 	| input1 | input2 | result |
 	| 0      | -1     | 0      |
 	| 0      | 1      | 0      |
-
-Scenario Outline: Modulo: DivideByZeroError
-	And I enter <input1> and <input2> into the calculator
-	And the second input is equal to zero
-	When I press modulo
-	Then the result should display an error message
-	Examples:
-	| input1 | input2 |
-	| -1     | 0      |
-	| 0      | 0      |
-	| 1      | 0      |
-
+	
 Scenario Outline: Modulo
 	And I enter <input1> and <input2> into the calculator
 	And the second input is not equal to zero
@@ -76,14 +54,8 @@ Scenario Outline: Modulo
 	| 0      | -1     | 0      |
 	| 0      | 1      | 0      |
 
-Scenario: Reciprocal: DivideByZeroError
-	And I enter a first input number of zero 0 into the calculator
-	When I press reciprocal
-	Then the result should display an error message
-
 Scenario Outline: Reciprocal
 	And I enter a first input number that is not zero <input> into the calculator
-	And the first input is not equal to zero
 	When I press reciprocal
 	Then the result should be <result>
 	Examples:
@@ -101,6 +73,22 @@ Scenario Outline: Exponent
 	| 1      | 2      | 1      |
 	| 2      | 2      | 4      |
 	| 3      | 2      | 9      |
+
+Scenario: Divide cannot divide by zero
+	And I enter a second input number of zero 0 into the calculator
+	When I press divide
+	Then the result should display an error message
+
+Scenario: Modulo cannot divide by zero
+	And I enter a second input number of zero 0 into the calculator
+	When I press modulo
+	Then the result should display an error message
+
+Scenario: Reciprocal cannot divide by zero
+	And I enter a first input number of zero 0 into the calculator
+	When I press reciprocal
+	Then the result should display an error message
+
 
 Scenario Outline: SumOfEvenNumbers
 	And I enter the numbers below into a list
