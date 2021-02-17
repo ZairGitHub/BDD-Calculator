@@ -53,6 +53,16 @@ namespace CalculatorLibrary
 
         public double Exponent() => Math.Pow(Input1, Input2);
 
+        public double SquareRoot()
+        {
+            if (Input1 < 0)
+            {
+                Exception = new ArgumentException("Cannot square root negative numbers");
+                return double.NaN;
+            }
+            return Math.Sqrt(Input1);
+        }
+
         public void AddNumbersToList(Table table)
         {
             _numbersList = table.Rows
