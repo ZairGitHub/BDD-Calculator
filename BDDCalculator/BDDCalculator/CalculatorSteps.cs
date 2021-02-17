@@ -81,5 +81,22 @@ namespace BDDCalculator
         {
             Assert.That(_result, Is.EqualTo(expected));
         }
+
+        [Given(@"I enter a number (.*) into the calculator")]
+        public void GivenIEnterANumberIntoTheCalculator(double input)
+        {
+            _calculator.Number1 = input;
+            _calculator.Number2 = input;
+        }
+
+        [Given(@"the first input is not equal to zero")]
+        public void GivenTheFirstInputIsNotEqualToZero()
+        {
+            Assert.That(_calculator.Number1, Is.Not.Zero);            
+        }
+
+        [When(@"I press Reciprocal")]
+        public void WhenIPressReciprocal() => _result = _calculator.Reciprocal();
+
     }
 }

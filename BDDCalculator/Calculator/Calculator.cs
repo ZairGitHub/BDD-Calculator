@@ -41,6 +41,16 @@ namespace CalculatorLibrary
             return Number1 % Number2;
         }
 
+        public double Reciprocal()
+        {
+            if (Number1 == 0)
+            {
+                Exception = new DivideByZeroException("Cannot divide by zero.");
+                return double.NaN;
+            }
+            return 1 / Number1;
+        }
+
         public double Exponent() => Math.Pow(Number1, Number2);
 
         public void AddNumbersToList(Table table)

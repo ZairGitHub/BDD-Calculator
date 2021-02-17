@@ -76,6 +76,18 @@ Scenario Outline: Modulo
 	| 0      | -1     | 0      |
 	| 0      | 1      | 0      |
 
+Scenario Outline: Reciprocal
+	And I enter a number <input> into the calculator
+	And the first input is not equal to zero
+	When I press Reciprocal
+	Then the result should be <result>
+	Examples:
+	| input  | result |
+	| 1      | 1      |
+	| 2      | 0.5    |
+	| 4      | 0.25	  |
+	| 5      | 0.2    |
+
 Scenario Outline: Exponent
 	And I enter <input1> and <input2> into the calculator
 	When I press exponent
