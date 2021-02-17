@@ -78,6 +78,16 @@ Scenario Outline: Exponent
 	| 2      | 2      | 4      |
 	| 3      | 2      | 9      |
 
+Scenario Outline: SquareRoot
+	And I enter a first input number that is zero or positive <input> into the calculator
+	When I press squareroot
+	Then the result should be <result>
+	Examples:
+	| input | result |
+	| 0     | 0		 |
+	| 1     | 1		 |
+	| 9     | 3		 |
+
 Scenario: Divide cannot divide by zero
 	And I enter a second input number of zero 0 into the calculator
 	When I press divide
