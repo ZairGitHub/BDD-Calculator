@@ -76,6 +76,16 @@ Scenario Outline: Modulo
 	| 0      | -1     | 0      |
 	| 0      | 1      | 0      |
 
+Scenario Outline: Exponent
+	And I enter <input1> and <input2> into the calculator
+	When I press exponent
+	Then the result should be <result>
+	Examples:
+	| input1 | input2 | result |
+	| 1      | 2      | 1      |
+	| 2      | 2      | 4      |
+	| 3      | 2      | 9      |
+
 Scenario Outline: SumOfEvenNumbers
 	And I enter the numbers below into a list
 	| numbers |
