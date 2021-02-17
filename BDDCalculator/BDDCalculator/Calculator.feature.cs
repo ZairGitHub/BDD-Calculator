@@ -84,9 +84,9 @@ namespace BDDCalculator
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Addition")]
-        [NUnit.Framework.TestCaseAttribute("0", "-1", "-1", null)]
-        [NUnit.Framework.TestCaseAttribute("0", "0", "0", null)]
-        [NUnit.Framework.TestCaseAttribute("0", "1", "1", null)]
+        [NUnit.Framework.TestCaseAttribute("1", "-1", "0", null)]
+        [NUnit.Framework.TestCaseAttribute("1", "0", "1", null)]
+        [NUnit.Framework.TestCaseAttribute("1", "1", "2", null)]
         public virtual void Addition(string input1, string input2, string result, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
@@ -136,9 +136,9 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Subtract")]
-        [NUnit.Framework.TestCaseAttribute("0", "-1", "1", null)]
-        [NUnit.Framework.TestCaseAttribute("0", "0", "0", null)]
-        [NUnit.Framework.TestCaseAttribute("0", "1", "-1", null)]
+        [NUnit.Framework.TestCaseAttribute("1", "-1", "2", null)]
+        [NUnit.Framework.TestCaseAttribute("1", "0", "1", null)]
+        [NUnit.Framework.TestCaseAttribute("1", "1", "0", null)]
         public virtual void Subtract(string input1, string input2, string result, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
@@ -188,9 +188,9 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Multiply")]
-        [NUnit.Framework.TestCaseAttribute("0", "-1", "0", null)]
-        [NUnit.Framework.TestCaseAttribute("0", "0", "0", null)]
-        [NUnit.Framework.TestCaseAttribute("0", "1", "0", null)]
+        [NUnit.Framework.TestCaseAttribute("1", "-1", "-1", null)]
+        [NUnit.Framework.TestCaseAttribute("1", "0", "0", null)]
+        [NUnit.Framework.TestCaseAttribute("1", "1", "1", null)]
         public virtual void Multiply(string input1, string input2, string result, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
@@ -240,8 +240,8 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Divide")]
-        [NUnit.Framework.TestCaseAttribute("0", "-1", "0", null)]
-        [NUnit.Framework.TestCaseAttribute("0", "1", "0", null)]
+        [NUnit.Framework.TestCaseAttribute("1", "-1", "-1", null)]
+        [NUnit.Framework.TestCaseAttribute("1", "1", "1", null)]
         public virtual void Divide(string input1, string input2, string result, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
@@ -291,8 +291,8 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Modulo")]
-        [NUnit.Framework.TestCaseAttribute("0", "-1", "0", null)]
-        [NUnit.Framework.TestCaseAttribute("0", "1", "0", null)]
+        [NUnit.Framework.TestCaseAttribute("1", "-1", "0", null)]
+        [NUnit.Framework.TestCaseAttribute("1", "1", "0", null)]
         public virtual void Modulo(string input1, string input2, string result, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
@@ -393,12 +393,12 @@ this.FeatureBackground();
         [NUnit.Framework.TestCaseAttribute("1", "2", "1", null)]
         [NUnit.Framework.TestCaseAttribute("2", "2", "4", null)]
         [NUnit.Framework.TestCaseAttribute("3", "2", "9", null)]
-        public virtual void Exponent(string input1, string input2, string result, string[] exampleTags)
+        public virtual void Exponent(string input1, string exponent, string result, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("input1", input1);
-            argumentsOfScenario.Add("input2", input2);
+            argumentsOfScenario.Add("exponent", exponent);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Exponent", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 70
@@ -428,7 +428,7 @@ this.FeatureBackground();
  testRunner.And(string.Format("I enter my first input number {0} into the calculator", input1), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 72
- testRunner.And(string.Format("I enter my second input number of {0} into the calculator", input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And(string.Format("I enter my second input number of {0} into the calculator", exponent), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 73
  testRunner.When("I press exponent", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

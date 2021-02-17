@@ -11,9 +11,9 @@ Scenario Outline: Addition
 	Then the result should be <result>
 	Examples:
 	| input1 | input2 | result |
-	| 0      | -1     | -1     |
-	| 0      | 0      | 0      |
-	| 0		 | 1      | 1      |
+	| 1      | -1     | 0      |
+	| 1      | 0      | 1      |
+	| 1		 | 1      | 2      |
 
 Scenario Outline: Subtract
 	And I enter my first input number <input1> into the calculator
@@ -22,9 +22,9 @@ Scenario Outline: Subtract
 	Then the result should be <result>
 	Examples:
 	| input1 | input2 | result |
-	| 0      | -1     | 1      |
-	| 0      | 0      | 0      |
-	| 0		 | 1      | -1     |
+	| 1      | -1     | 2      |
+	| 1      | 0      | 1      |
+	| 1		 | 1      | 0      |
 
 Scenario Outline: Multiply
 	And I enter my first input number <input1> into the calculator
@@ -33,9 +33,9 @@ Scenario Outline: Multiply
 	Then the result should be <result>
 	Examples:
 	| input1 | input2 | result |
-	| 0      | -1     | 0      |
-	| 0      | 0      | 0      |
-	| 0		 | 1      | 0      |
+	| 1      | -1     | -1     |
+	| 1      | 0      | 0      |
+	| 1		 | 1      | 1      |
 
 Scenario Outline: Divide
 	And I enter my first input number <input1> into the calculator
@@ -44,8 +44,8 @@ Scenario Outline: Divide
 	Then the result should be <result>
 	Examples:
 	| input1 | input2 | result |
-	| 0      | -1     | 0      |
-	| 0      | 1      | 0      |
+	| 1      | -1     | -1     |
+	| 1      | 1      | 1      |
 	
 Scenario Outline: Modulo
 	And I enter my first input number <input1> into the calculator
@@ -54,8 +54,8 @@ Scenario Outline: Modulo
 	Then the result should be <result>
 	Examples:
 	| input1 | input2 | result |
-	| 0      | -1     | 0      |
-	| 0      | 1      | 0      |
+	| 1      | -1     | 0      |
+	| 1      | 1      | 0      |
 
 Scenario Outline: Reciprocal
 	And I enter a first input number that is not zero <input> into the calculator
@@ -69,14 +69,14 @@ Scenario Outline: Reciprocal
 
 Scenario Outline: Exponent
 	And I enter my first input number <input1> into the calculator
-	And I enter my second input number of <input2> into the calculator
+	And I enter my second input number of <exponent> into the calculator
 	When I press exponent
 	Then the result should be <result>
 	Examples:
-	| input1 | input2 | result |
-	| 1      | 2      | 1      |
-	| 2      | 2      | 4      |
-	| 3      | 2      | 9      |
+	| input1 | exponent | result |
+	| 1      | 2        | 1      |
+	| 2      | 2        | 4      |
+	| 3      | 2        | 9      |
 
 Scenario Outline: SquareRoot
 	And I enter a first input number that is zero or positive <input> into the calculator
