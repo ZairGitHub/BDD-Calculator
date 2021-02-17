@@ -31,6 +31,18 @@ namespace CalculatorLibrary
             return Number1 / Number2;
         }
 
+        public int Modulo()
+        {
+            if (Number2 == 0)
+            {
+                Exception = new DivideByZeroException("Cannot divide by zero.");
+                return 0;
+            }
+            return Number1 % Number2;
+        }
+
+        public int Exponent() => (int)Math.Pow(Number1, Number2);
+
         public void AddNumbersToList(Table table)
         {
             _numbersList = table.Rows

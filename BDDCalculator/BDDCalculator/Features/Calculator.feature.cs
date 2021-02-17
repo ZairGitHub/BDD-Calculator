@@ -119,7 +119,7 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 8
- testRunner.And(string.Format("then I enter {0} and {1} into the calculator", input1, input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And(string.Format("I enter {0} and {1} into the calculator", input1, input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 9
  testRunner.When("I press add", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -168,7 +168,7 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 18
- testRunner.And(string.Format("then I enter {0} and {1} into the calculator", input1, input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And(string.Format("I enter {0} and {1} into the calculator", input1, input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 19
  testRunner.When("I press subtract", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -217,7 +217,7 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 28
- testRunner.And(string.Format("then I enter {0} and {1} into the calculator", input1, input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And(string.Format("I enter {0} and {1} into the calculator", input1, input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 29
  testRunner.When("I press multiply", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -265,7 +265,7 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 38
- testRunner.And(string.Format("then I enter {0} and {1} into the calculator", input1, input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And(string.Format("I enter {0} and {1} into the calculator", input1, input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 39
  testRunner.And("the second input is equal to zero", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -316,7 +316,7 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 49
- testRunner.And(string.Format("then I enter {0} and {1} into the calculator", input1, input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And(string.Format("I enter {0} and {1} into the calculator", input1, input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 50
  testRunner.And("the second input is not equal to zero", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -374,7 +374,7 @@ this.FeatureBackground();
                 table1.AddRow(new string[] {
                             "5"});
 #line 59
- testRunner.And("then I enter the numbers below into a list", ((string)(null)), table1, "And ");
+ testRunner.And("I enter the numbers below into a list", ((string)(null)), table1, "And ");
 #line hidden
 #line 66
  testRunner.When("I iterate through the list to select all even numbers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
