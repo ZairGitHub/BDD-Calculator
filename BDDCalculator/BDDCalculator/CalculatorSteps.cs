@@ -14,11 +14,11 @@ namespace BDDCalculator
         [Given(@"I have a calculator")]
         public void GivenIHaveACalculator() => _calculator = new Calculator();
         
-        [Given(@"then I enter (.*) and (.*) into the calculator")]
-        public void GivenThenIEnterAndIntoTheCalculator(int a, int b)
+        [Given(@"I enter (.*) and (.*) into the calculator")]
+        public void GivenIEnterInput1AndInput2IntoTheCalculator(int input1, int input2)
         {
-            _calculator.Number1 = a;
-            _calculator.Number2 = b;
+            _calculator.Number1 = input1;
+            _calculator.Number2 = input2;
         }
 
         [Given(@"the second input is equal to zero")]

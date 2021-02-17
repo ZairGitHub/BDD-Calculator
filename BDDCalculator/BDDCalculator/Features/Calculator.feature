@@ -5,7 +5,7 @@ Background:
 	Given I have a calculator
 
 Scenario Outline: Addition
-	And then I enter <input1> and <input2> into the calculator
+	And I enter <input1> and <input2> into the calculator
 	When I press add
 	Then the result should be <result>
 	Examples:
@@ -15,7 +15,7 @@ Scenario Outline: Addition
 	| 0		 | 1      | 1      |
 
 Scenario Outline: Subtract
-	And then I enter <input1> and <input2> into the calculator
+	And I enter <input1> and <input2> into the calculator
 	When I press subtract
 	Then the result should be <result>
 	Examples:
@@ -25,7 +25,7 @@ Scenario Outline: Subtract
 	| 0		 | 1      | -1     |
 
 Scenario Outline: Multiply
-	And then I enter <input1> and <input2> into the calculator
+	And I enter <input1> and <input2> into the calculator
 	When I press multiply
 	Then the result should be <result>
 	Examples:
@@ -35,7 +35,7 @@ Scenario Outline: Multiply
 	| 0		 | 1      | 0      |
 
 Scenario Outline: DivideByZeroError
-	And then I enter <input1> and <input2> into the calculator
+	And I enter <input1> and <input2> into the calculator
 	And the second input is equal to zero
 	When I press divide
 	Then the result should display an error message
@@ -46,7 +46,7 @@ Scenario Outline: DivideByZeroError
 	| 1      | 0      |
 
 Scenario Outline: Divide
-	And then I enter <input1> and <input2> into the calculator
+	And I enter <input1> and <input2> into the calculator
 	And the second input is not equal to zero
 	When I press divide
 	Then the result should be <result>
