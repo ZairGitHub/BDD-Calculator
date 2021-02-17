@@ -5,7 +5,6 @@ Background:
 	Given I have a calculator
 
 Scenario Outline: Addition
-	Given I have a calculator
 	And then I enter <input1> and <input2> into the calculator
 	When I press add
 	Then the result should be <result>
@@ -16,7 +15,6 @@ Scenario Outline: Addition
 	| 0		 | 1      | 1      |
 
 Scenario Outline: Subtract
-	Given I have a calculator
 	And then I enter <input1> and <input2> into the calculator
 	When I press subtract
 	Then the result should be <result>
@@ -27,7 +25,6 @@ Scenario Outline: Subtract
 	| 0		 | 1      | -1     |
 
 Scenario Outline: Multiply
-	Given I have a calculator
 	And then I enter <input1> and <input2> into the calculator
 	When I press multiply
 	Then the result should be <result>
@@ -38,7 +35,6 @@ Scenario Outline: Multiply
 	| 0		 | 1      | 0      |
 
 Scenario Outline: DivideByZeroError
-	Given I have a calculator
 	And then I enter <input1> and <input2> into the calculator
 	And the second input is equal to zero
 	When I press divide
@@ -50,7 +46,6 @@ Scenario Outline: DivideByZeroError
 	| 1      | 0      |
 
 Scenario Outline: Divide
-	Given I have a calculator
 	And then I enter <input1> and <input2> into the calculator
 	And the second input is not equal to zero
 	When I press divide
@@ -61,7 +56,6 @@ Scenario Outline: Divide
 	| 0      | 1      | 0      |
 
 Scenario Outline: SumOfEvenNumbers
-	Given I have a calculator
 	And then I enter the numbers below into a list
 	| numbers |
 	| 1       |
