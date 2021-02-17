@@ -28,8 +28,14 @@ namespace BDDCalculator
             _calculator.Number1 = input;
         }
 
-        [Given(@"I enter a the number of zero (.*) into the calculator")]
-        public void GivenIEnterATheNumberOfZeroIntoTheCalculator(double input)
+        [Given(@"I enter a first input number of zero (.*) into the calculator")]
+        public void GivenIEnterAFirstInputNumberOfZeroIntoTheCalculator(double input)
+        {
+            _calculator.Number1 = input;
+        }
+
+        [Given(@"I enter a first input number that is not zero (.*) into the calculator")]
+        public void GivenIEnterAFirstInputNumberThatIsNotZeroIntoTheCalculator(double input)
         {
             _calculator.Number1 = input;
         }

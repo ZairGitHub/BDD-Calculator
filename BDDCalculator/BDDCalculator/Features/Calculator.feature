@@ -77,13 +77,12 @@ Scenario Outline: Modulo
 	| 0      | 1      | 0      |
 
 Scenario: Reciprocal: DivideByZeroError
-	And I enter a the number of zero 0 into the calculator
-	And the first input is zero
+	And I enter a first input number of zero 0 into the calculator
 	When I press reciprocal
 	Then the result should display an error message
 
 Scenario Outline: Reciprocal
-	And I enter a number <input> into the calculator
+	And I enter a first input number that is not zero <input> into the calculator
 	And the first input is not equal to zero
 	When I press reciprocal
 	Then the result should be <result>
@@ -92,7 +91,6 @@ Scenario Outline: Reciprocal
 	| 1      | 1      |
 	| 2      | 0.5    |
 	| 4      | 0.25	  |
-	| 5      | 0.2    |
 
 Scenario Outline: Exponent
 	And I enter <input1> and <input2> into the calculator
