@@ -1,5 +1,8 @@
 ﻿Feature: Calculator
-	Simple calculator for adding two numbers
+	Simple BDD calculator for performing simple arithmetic with two numbers
+
+Background:
+	Given I have a calculator
 
 Scenario Outline: Addition
 	Given I have a calculator
