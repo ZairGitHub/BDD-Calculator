@@ -55,6 +55,16 @@ Scenario Outline: Divide
 	| 0      | -1     | 0      |
 	| 0      | 1      | 0      |
 
+Scenario Outline: Modulo
+	And I enter <input1> and <input2> into the calculator
+	And the second input is not equal to zero
+	When I press modulo
+	Then the result should be <result>
+	Examples:
+	| input1 | input2 | result |
+	| 0      | -1     | 0      |
+	| 0      | 1      | 0      |
+
 Scenario Outline: SumOfEvenNumbers
 	And I enter the numbers below into a list
 	| numbers |

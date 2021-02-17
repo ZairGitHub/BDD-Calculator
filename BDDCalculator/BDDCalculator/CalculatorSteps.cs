@@ -51,6 +51,10 @@ namespace BDDCalculator
         [When(@"I press divide")]
         public void WhenIPressDivide() => _result = _calculator.Divide();
 
+        [When(@"I press modulo")]
+        public void WhenIPressModulo() => _result = _calculator.Modulo();
+
+
         [When(@"I iterate through the list to select all even numbers")]
         public void WhenIIterateThroughTheListToSelectAllEvenNumbers()
         {
