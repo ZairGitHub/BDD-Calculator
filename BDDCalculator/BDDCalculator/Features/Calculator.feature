@@ -56,7 +56,7 @@ Scenario Outline: Divide
 	| 0      | 1      | 0      |
 
 Scenario Outline: SumOfEvenNumbers
-	And then I enter the numbers below into a list
+	And I enter the numbers below into a list
 	| numbers |
 	| 1       |
 	| 2       |

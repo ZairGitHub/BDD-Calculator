@@ -33,6 +33,12 @@ namespace BDDCalculator
             Assert.That(_calculator.Number2, Is.Not.Zero);
         }
 
+        [Given(@"I enter the numbers below into a list")]
+        public void GivenIEnterTheNumbersBelowIntoAList(Table table)
+        {
+            _calculator.AddNumbersToList(table);
+        }
+
         [When(@"I press add")]
         public void WhenIPressAdd() => _result = _calculator.Add();
 
@@ -45,19 +51,6 @@ namespace BDDCalculator
         [When(@"I press divide")]
         public void WhenIPressDivide() => _result = _calculator.Divide();
 
-        [Then(@"the result should display an error message")]
-        public void ThenTheResultShouldDisplayAnErrorMessage()
-        {
-            Assert.That(_calculator.Exception, Is.TypeOf<DivideByZeroException>()
-                .With.Message.EqualTo("Cannot divide by zero."));
-        }
-
-        [Given(@"then I enter the numbers below into a list")]
-        public void GivenThenIEnterTheNumbersBelowIntoAList(Table table)
-        {
-            _calculator.AddNumbersToList(table);
-        }
-
         [When(@"I iterate through the list to select all even numbers")]
         public void WhenIIterateThroughTheListToSelectAllEvenNumbers()
         {
@@ -68,6 +61,13 @@ namespace BDDCalculator
         public void WhenIAddThemTogether()
         {
             _result = _calculator.SumOfEvenNumbers();
+        }
+
+        [Then(@"the result should display an error message")]
+        public void ThenTheResultShouldDisplayAnErrorMessage()
+        {
+            Assert.That(_calculator.Exception, Is.TypeOf<DivideByZeroException>()
+                .With.Message.EqualTo("Cannot divide by zero."));
         }
 
         [Then(@"the result should be (.*)")]
