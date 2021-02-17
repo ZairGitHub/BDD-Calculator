@@ -81,17 +81,22 @@ Scenario Outline: Exponent
 Scenario: Divide cannot divide by zero
 	And I enter a second input number of zero 0 into the calculator
 	When I press divide
-	Then the result should display an error message
+	Then the result should display a division error message
 
 Scenario: Modulo cannot divide by zero
 	And I enter a second input number of zero 0 into the calculator
 	When I press modulo
-	Then the result should display an error message
+	Then the result should display a division error message
 
 Scenario: Reciprocal cannot divide by zero
 	And I enter a first input number of zero 0 into the calculator
 	When I press reciprocal
-	Then the result should display an error message
+	Then the result should display a division error message
+
+Scenario: SquareRoot cannot accept negative numbers
+	And I enter a first input number that is negative -1 into the calculator
+	When I press squareroot
+	Then the result should display an argument error message
 
 Scenario Outline: SumOfEvenNumbers
 	And I enter the numbers below into a list

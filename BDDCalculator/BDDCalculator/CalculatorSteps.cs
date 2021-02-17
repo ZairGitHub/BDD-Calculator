@@ -32,6 +32,12 @@ namespace BDDCalculator
             _calculator.Input1 = input;
         }
 
+        [Given(@"I enter a first input number that is negative (.*) into the calculator")]
+        public void GivenIEnterAFirstInputNumberThatIsNegativeIntoTheCalculator(double input)
+        {
+            _calculator.Input1 = input;
+        }
+
         [Given(@"I enter my second input number of (.*) into the calculator")]
         public void GivenIEnterMySecondInputNumberOfIntoTheCalculator(double input)
         {
@@ -77,6 +83,9 @@ namespace BDDCalculator
         [When(@"I press exponent")]
         public void WhenIPressExponent() => _result = _calculator.Exponent();
 
+        [When(@"I press squareroot")]
+        public void WhenIPressSquareroot() => _result = _calculator.SquareRoot();
+
         [When(@"I iterate through the list to select all even numbers")]
         public void WhenIIterateThroughTheListToSelectAllEvenNumbers()
         {
@@ -89,11 +98,18 @@ namespace BDDCalculator
             _result = _calculator.SumOfEvenNumbers();
         }
 
-        [Then(@"the result should display an error message")]
-        public void ThenTheResultShouldDisplayAnErrorMessage()
+        [Then(@"the result should display a division error message")]
+        public void ThenTheResultShouldDisplayADivisionErrorMessage()
         {
             Assert.That(_calculator.Exception, Is.TypeOf<DivideByZeroException>()
                 .With.Message.EqualTo("Cannot divide by zero."));
+        }
+
+        [Then(@"the result should display an argument error message")]
+        public void ThenTheResultShouldDisplayAnArgumentErrorMessage()
+        {
+            Assert.That(_calculator.Exception, Is.TypeOf<ArgumentException>()
+                .With.Message.EqualTo("Cannot square root negative numbers"));
         }
 
         [Then(@"the result should be (.*)")]
