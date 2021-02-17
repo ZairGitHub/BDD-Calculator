@@ -28,6 +28,12 @@ namespace BDDCalculator
             _calculator.Number1 = input;
         }
 
+        [Given(@"the first input is zero")]
+        public void GivenTheFirstInputIsZero()
+        {
+            Assert.That(_calculator.Number1, Is.Zero);
+        }
+
         [Given(@"the first input is not equal to zero")]
         public void GivenTheFirstInputIsNotEqualToZero()
         {
