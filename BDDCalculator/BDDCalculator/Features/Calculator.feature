@@ -34,7 +34,7 @@ Scenario Outline: Multiply
 	| 0      | 0      | 0      |
 	| 0		 | 1      | 0      |
 
-Scenario Outline: DivideByZeroError
+Scenario Outline: Divide: DivideByZeroError
 	And I enter <input1> and <input2> into the calculator
 	And the second input is equal to zero
 	When I press divide
@@ -54,6 +54,17 @@ Scenario Outline: Divide
 	| input1 | input2 | result |
 	| 0      | -1     | 0      |
 	| 0      | 1      | 0      |
+
+Scenario Outline: Modulo: DivideByZeroError
+	And I enter <input1> and <input2> into the calculator
+	And the second input is equal to zero
+	When I press modulo
+	Then the result should display an error message
+	Examples:
+	| input1 | input2 |
+	| -1     | 0      |
+	| 0      | 0      |
+	| 1      | 0      |
 
 Scenario Outline: Modulo
 	And I enter <input1> and <input2> into the calculator
