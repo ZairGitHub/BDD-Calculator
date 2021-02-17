@@ -15,10 +15,23 @@ namespace BDDCalculator
         public void GivenIHaveACalculator() => _calculator = new Calculator();
         
         [Given(@"I enter (.*) and (.*) into the calculator")]
-        public void GivenIEnterInput1AndInput2IntoTheCalculator(double input1, double input2)
+        public void GivenIEnterInput1AndInput2IntoTheCalculator(
+            double input1, double input2)
         {
             _calculator.Number1 = input1;
             _calculator.Number2 = input2;
+        }
+
+        [Given(@"I enter a number (.*) into the calculator")]
+        public void GivenIEnterANumberIntoTheCalculator(double input)
+        {
+            _calculator.Number1 = input;
+        }
+
+        [Given(@"the first input is not equal to zero")]
+        public void GivenTheFirstInputIsNotEqualToZero()
+        {
+            Assert.That(_calculator.Number1, Is.Not.Zero);
         }
 
         [Given(@"the second input is equal to zero")]
@@ -54,6 +67,9 @@ namespace BDDCalculator
         [When(@"I press modulo")]
         public void WhenIPressModulo() => _result = _calculator.Modulo();
 
+        [When(@"I press reciprocal")]
+        public void WhenIPressReciprocal() => _result = _calculator.Reciprocal();
+
         [When(@"I press exponent")]
         public void WhenIPressExponent() => _result = _calculator.Exponent();
 
@@ -81,22 +97,5 @@ namespace BDDCalculator
         {
             Assert.That(_result, Is.EqualTo(expected));
         }
-
-        [Given(@"I enter a number (.*) into the calculator")]
-        public void GivenIEnterANumberIntoTheCalculator(double input)
-        {
-            _calculator.Number1 = input;
-            _calculator.Number2 = input;
-        }
-
-        [Given(@"the first input is not equal to zero")]
-        public void GivenTheFirstInputIsNotEqualToZero()
-        {
-            Assert.That(_calculator.Number1, Is.Not.Zero);            
-        }
-
-        [When(@"I press Reciprocal")]
-        public void WhenIPressReciprocal() => _result = _calculator.Reciprocal();
-
     }
 }

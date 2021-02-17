@@ -79,7 +79,7 @@ Scenario Outline: Modulo
 Scenario Outline: Reciprocal
 	And I enter a number <input> into the calculator
 	And the first input is not equal to zero
-	When I press Reciprocal
+	When I press reciprocal
 	Then the result should be <result>
 	Examples:
 	| input  | result |
