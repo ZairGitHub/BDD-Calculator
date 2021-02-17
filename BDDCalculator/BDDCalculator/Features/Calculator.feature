@@ -89,7 +89,6 @@ Scenario: Reciprocal cannot divide by zero
 	When I press reciprocal
 	Then the result should display an error message
 
-
 Scenario Outline: SumOfEvenNumbers
 	And I enter the numbers below into a list
 	| numbers |
