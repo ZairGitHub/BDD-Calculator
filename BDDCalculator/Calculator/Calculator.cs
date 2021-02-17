@@ -7,46 +7,46 @@ namespace CalculatorLibrary
 {
     public class Calculator
     {
-        private List<int> _numbersList = new List<int>();
+        private List<double> _numbersList = new List<double>();
 
-        public int Number1 { get; set; }
+        public double Number1 { get; set; }
 
-        public int Number2 { get; set; }
+        public double Number2 { get; set; }
 
         public Exception Exception { get; private set; }
 
-        public int Add() => Number1 + Number2;
+        public double Add() => Number1 + Number2;
 
-        public int Subtract() => Number1 - Number2;
+        public double Subtract() => Number1 - Number2;
 
-        public int Multiply() => Number1 * Number2;
+        public double Multiply() => Number1 * Number2;
 
-        public int Divide()
+        public double Divide()
         {
             if (Number2 == 0)
             {
                 Exception = new DivideByZeroException("Cannot divide by zero.");
-                return 0;
+                return double.NaN;
             }
             return Number1 / Number2;
         }
 
-        public int Modulo()
+        public double Modulo()
         {
             if (Number2 == 0)
             {
                 Exception = new DivideByZeroException("Cannot divide by zero.");
-                return 0;
+                return double.NaN;
             }
             return Number1 % Number2;
         }
 
-        public int Exponent() => (int)Math.Pow(Number1, Number2);
+        public double Exponent() => Math.Pow(Number1, Number2);
 
         public void AddNumbersToList(Table table)
         {
             _numbersList = table.Rows
-                .Select(row => int.Parse(row["numbers"])).ToList();
+                .Select(row => double.Parse(row["numbers"])).ToList();
         }
 
         public void IterateAndSelectEvenNumbers()
@@ -54,6 +54,6 @@ namespace CalculatorLibrary
             _numbersList = _numbersList.Where(i => i % 2 == 0).ToList();
         }
 
-        public int SumOfEvenNumbers() => _numbersList.Sum();
+        public double SumOfEvenNumbers() => _numbersList.Sum();
     }
 }

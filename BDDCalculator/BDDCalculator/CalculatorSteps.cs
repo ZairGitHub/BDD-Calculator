@@ -8,14 +8,14 @@ namespace BDDCalculator
     [Binding]
     public class CalculatorSteps
     {
-        private int _result;
+        private double _result;
         private Calculator _calculator;
 
         [Given(@"I have a calculator")]
         public void GivenIHaveACalculator() => _calculator = new Calculator();
         
         [Given(@"I enter (.*) and (.*) into the calculator")]
-        public void GivenIEnterInput1AndInput2IntoTheCalculator(int input1, int input2)
+        public void GivenIEnterInput1AndInput2IntoTheCalculator(double input1, double input2)
         {
             _calculator.Number1 = input1;
             _calculator.Number2 = input2;
@@ -77,7 +77,7 @@ namespace BDDCalculator
         }
 
         [Then(@"the result should be (.*)")]
-        public void ThenTheResultShouldBe(int expected)
+        public void ThenTheResultShouldBe(double expected)
         {
             Assert.That(_result, Is.EqualTo(expected));
         }
