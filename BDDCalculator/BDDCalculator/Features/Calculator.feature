@@ -76,8 +76,8 @@ Scenario Outline: Modulo
 	| 0      | -1     | 0      |
 	| 0      | 1      | 0      |
 
-Scenario Outline: Reciprocal: DivideByZeroError
-	And I enter a number 0 into the calculator
+Scenario: Reciprocal: DivideByZeroError
+	And I enter a the number of zero 0 into the calculator
 	And the first input is zero
 	When I press reciprocal
 	Then the result should display an error message

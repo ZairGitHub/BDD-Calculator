@@ -464,7 +464,7 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 80
- testRunner.And("I enter a number 0 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I enter a the number of zero 0 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 81
  testRunner.And("the first input is zero", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
