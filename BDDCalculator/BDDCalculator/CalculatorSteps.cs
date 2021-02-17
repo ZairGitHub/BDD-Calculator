@@ -13,16 +13,9 @@ namespace BDDCalculator
 
         [Given(@"I have a calculator")]
         public void GivenIHaveACalculator() => _calculator = new Calculator();
-        
-        [Given(@"I enter (.*) and (.*) into the calculator")]
-        public void GivenIEnterInput1AndInput2IntoTheCalculator(double input1, double input2)
-        {
-            _calculator.Input1 = input1;
-            _calculator.Input2 = input2;
-        }
 
-        [Given(@"I enter a number (.*) into the calculator")]
-        public void GivenIEnterANumberIntoTheCalculator(double input)
+        [Given(@"I enter my first input number (.*) into the calculator")]
+        public void GivenIEnterMyFirstInputNumberIntoTheCalculator(double input)
         {
             _calculator.Input1 = input;
         }
@@ -39,38 +32,22 @@ namespace BDDCalculator
             _calculator.Input1 = input;
         }
 
+        [Given(@"I enter my second input number of (.*) into the calculator")]
+        public void GivenIEnterMySecondInputNumberOfIntoTheCalculator(double input)
+        {
+            _calculator.Input2 = input;
+        }
+
         [Given(@"I enter a second input number of zero (.*) into the calculator")]
         public void GivenIEnterASecondInputNumberOfZeroIntoTheCalculator(double input)
         {
             _calculator.Input2 = input;
         }
 
-
-
-
-
-        [Given(@"the first input is zero")]
-        public void GivenTheFirstInputIsZero()
+        [Given(@"I enter a second input number that is not zero (.*) into the calculator")]
+        public void GivenIEnterASecondInputNumberThatIsNotZeroIntoTheCalculator(int input)
         {
-            Assert.That(_calculator.Input1, Is.Zero);
-        }
-
-        [Given(@"the first input is not equal to zero")]
-        public void GivenTheFirstInputIsNotEqualToZero()
-        {
-            Assert.That(_calculator.Input1, Is.Not.Zero);
-        }
-
-        [Given(@"the second input is equal to zero")]
-        public void GivenTheSecondInputIsEqualToZero()
-        {
-            Assert.That(_calculator.Input2, Is.Zero);
-        }
-
-        [Given(@"the second input is not equal to zero")]
-        public void GivenTheSecondInputIsNotEqualToZero()
-        {
-            Assert.That(_calculator.Input2, Is.Not.Zero);
+            _calculator.Input2 = input;
         }
 
         [Given(@"I enter the numbers below into a list")]

@@ -5,7 +5,8 @@ Background:
 	Given I have a calculator
 
 Scenario Outline: Addition
-	And I enter <input1> and <input2> into the calculator
+	And I enter my first input number <input1> into the calculator
+	And I enter my second input number of <input2> into the calculator
 	When I press add
 	Then the result should be <result>
 	Examples:
@@ -15,7 +16,8 @@ Scenario Outline: Addition
 	| 0		 | 1      | 1      |
 
 Scenario Outline: Subtract
-	And I enter <input1> and <input2> into the calculator
+	And I enter my first input number <input1> into the calculator
+	And I enter my second input number of <input2> into the calculator
 	When I press subtract
 	Then the result should be <result>
 	Examples:
@@ -25,7 +27,8 @@ Scenario Outline: Subtract
 	| 0		 | 1      | -1     |
 
 Scenario Outline: Multiply
-	And I enter <input1> and <input2> into the calculator
+	And I enter my first input number <input1> into the calculator
+	And I enter my second input number of <input2> into the calculator
 	When I press multiply
 	Then the result should be <result>
 	Examples:
@@ -35,8 +38,8 @@ Scenario Outline: Multiply
 	| 0		 | 1      | 0      |
 
 Scenario Outline: Divide
-	And I enter <input1> and <input2> into the calculator
-	And the second input is not equal to zero
+	And I enter my first input number <input1> into the calculator
+	And I enter a second input number that is not zero <input2> into the calculator
 	When I press divide
 	Then the result should be <result>
 	Examples:
@@ -45,8 +48,8 @@ Scenario Outline: Divide
 	| 0      | 1      | 0      |
 	
 Scenario Outline: Modulo
-	And I enter <input1> and <input2> into the calculator
-	And the second input is not equal to zero
+	And I enter my first input number <input1> into the calculator
+	And I enter a second input number that is not zero <input2> into the calculator
 	When I press modulo
 	Then the result should be <result>
 	Examples:
@@ -65,7 +68,8 @@ Scenario Outline: Reciprocal
 	| 4      | 0.25	  |
 
 Scenario Outline: Exponent
-	And I enter <input1> and <input2> into the calculator
+	And I enter my first input number <input1> into the calculator
+	And I enter my second input number of <input2> into the calculator
 	When I press exponent
 	Then the result should be <result>
 	Examples:
