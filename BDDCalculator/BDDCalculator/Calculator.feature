@@ -89,17 +89,17 @@ Scenario Outline: SquareRoot
 	| 9     | 3		 |
 
 Scenario: Divide cannot divide by zero
-	And I enter a second input number of zero 0 into the calculator
+	And I enter a second input number of zero into the calculator
 	When I press divide
 	Then the result should display a division error message
 
 Scenario: Modulo cannot divide by zero
-	And I enter a second input number of zero 0 into the calculator
+	And I enter a second input number of zero into the calculator
 	When I press modulo
 	Then the result should display a division error message
 
 Scenario: Reciprocal cannot divide by zero
-	And I enter a first input number of zero 0 into the calculator
+	And I enter a first input number of zero into the calculator
 	When I press reciprocal
 	Then the result should display a division error message
 

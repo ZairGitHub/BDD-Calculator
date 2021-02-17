@@ -20,10 +20,10 @@ namespace BDDCalculator
             _calculator.Input1 = input;
         }
 
-        [Given(@"I enter a first input number of zero (.*) into the calculator")]
-        public void GivenIEnterAFirstInputNumberOfZeroIntoTheCalculator(double input)
+        [Given(@"I enter a first input number of zero into the calculator")]
+        public void GivenIEnterAFirstInputNumberOfZeroIntoTheCalculator()
         {
-            _calculator.Input1 = input;
+            _calculator.Input1 = 0;
         }
 
         [Given(@"I enter a first input number that is not zero (.*) into the calculator")]
@@ -50,10 +50,10 @@ namespace BDDCalculator
             _calculator.Input2 = input;
         }
 
-        [Given(@"I enter a second input number of zero (.*) into the calculator")]
-        public void GivenIEnterASecondInputNumberOfZeroIntoTheCalculator(double input)
+        [Given(@"I enter a second input number of zero into the calculator")]
+        public void GivenIEnterASecondInputNumberOfZeroIntoTheCalculator()
         {
-            _calculator.Input2 = input;
+            _calculator.Input2 = 0;
         }
 
         [Given(@"I enter a second input number that is not zero (.*) into the calculator")]

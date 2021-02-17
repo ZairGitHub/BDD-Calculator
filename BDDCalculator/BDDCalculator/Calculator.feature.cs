@@ -519,7 +519,7 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 92
- testRunner.And("I enter a second input number of zero 0 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I enter a second input number of zero into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 93
  testRunner.When("I press divide", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -562,7 +562,7 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 97
- testRunner.And("I enter a second input number of zero 0 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I enter a second input number of zero into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 98
  testRunner.When("I press modulo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -605,7 +605,7 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 102
- testRunner.And("I enter a first input number of zero 0 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I enter a first input number of zero into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 103
  testRunner.When("I press reciprocal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
