@@ -6,7 +6,7 @@ Background:
 
 Scenario Outline: Addition
 	And I enter any first input number <input1> into the calculator
-	And I enter any second input number of <input2> into the calculator
+	And I enter any second input number <input2> into the calculator
 	When I press add
 	Then the result should be <result>
 	Examples:
@@ -17,7 +17,7 @@ Scenario Outline: Addition
 
 Scenario Outline: Subtract
 	And I enter any first input number <input1> into the calculator
-	And I enter any second input number of <input2> into the calculator
+	And I enter any second input number <input2> into the calculator
 	When I press subtract
 	Then the result should be <result>
 	Examples:
@@ -28,7 +28,7 @@ Scenario Outline: Subtract
 
 Scenario Outline: Multiply
 	And I enter any first input number <input1> into the calculator
-	And I enter any second input number of <input2> into the calculator
+	And I enter any second input number <input2> into the calculator
 	When I press multiply
 	Then the result should be <result>
 	Examples:
@@ -69,7 +69,7 @@ Scenario Outline: Reciprocal
 
 Scenario Outline: Exponent
 	And I enter any first input number <input1> into the calculator
-	And I enter any second input number of <exponent> into the calculator
+	And I enter any second input number <exponent> into the calculator
 	When I press exponent
 	Then the result should be <result>
 	Examples:

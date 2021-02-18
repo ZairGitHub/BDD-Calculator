@@ -44,8 +44,8 @@ namespace BDDCalculator
             _calculator.Input1 = input;
         }
 
-        [Given(@"I enter any second input number of (.*) into the calculator")]
-        public void GivenIEnterAnySecondInputNumberOfIntoTheCalculator(double input)
+        [Given(@"I enter any second input number (.*) into the calculator")]
+        public void GivenIEnterAnySecondInputNumberIntoTheCalculator(double input)
         {
             _calculator.Input2 = input;
         }
