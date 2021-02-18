@@ -1,0 +1,673 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"[]>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/master.css" type="text/css" />
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <script type="text/javascript">
+$(document).ready(function() {
+  initializeToc();
+});
+</script>
+    <!-- We are using Font Awesome - http://fortawesome.github.com/Font-Awesome - licensed under CC BY 3.0 -->
+  </head>
+  <body>
+    <div id="container">
+      <div id="top" />
+      <div id="toc">
+        <p class="tocCollapser" title="Collapse Table of Content">«</p>
+        <ul class="features">
+          <li class="file" id="root">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="file">
+            <span class="current">Calculator</span>
+          </li>
+        </ul>
+      </div>
+      <div id="feature">
+        <h1>Calculator</h1>
+        <div class="description">
+          <p>Simple BDD calculator for handling arithmetic operations with one or two input numbers</p>
+        </div>
+        <ul id="scenarios">
+          <li class="scenario">
+            <div class="scenario-heading">
+              <h2></h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">Given </span>I have a calculator</li>
+              </ul>
+            </div>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="addition">
+              <h2>Addition</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">And </span>I enter any first input number &lt;input1&gt; into the calculator</li>
+                <li class="step">
+                  <span class="keyword">And </span>I enter any second input number &lt;input2&gt; into the calculator</li>
+                <li class="step">
+                  <span class="keyword">When </span>I press add</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the result should be equal to &lt;result&gt;</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('addition')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+            <div>
+              <div class="examples">
+                <h3>Examples: </h3>
+                <div class="table_container">
+                  <table class="datatable">
+                    <thead>
+                      <tr>
+                        <th>input1</th>
+                        <th>input2</th>
+                        <th>result</th>
+                        <th> </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>-1</td>
+                        <td>0</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td />
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="subtract">
+              <h2>Subtract</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">And </span>I enter any first input number &lt;input1&gt; into the calculator</li>
+                <li class="step">
+                  <span class="keyword">And </span>I enter any second input number &lt;input2&gt; into the calculator</li>
+                <li class="step">
+                  <span class="keyword">When </span>I press subtract</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the result should be equal to &lt;result&gt;</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('subtract')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+            <div>
+              <div class="examples">
+                <h3>Examples: </h3>
+                <div class="table_container">
+                  <table class="datatable">
+                    <thead>
+                      <tr>
+                        <th>input1</th>
+                        <th>input2</th>
+                        <th>result</th>
+                        <th> </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>-1</td>
+                        <td>2</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td />
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="multiply">
+              <h2>Multiply</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">And </span>I enter any first input number &lt;input1&gt; into the calculator</li>
+                <li class="step">
+                  <span class="keyword">And </span>I enter any second input number &lt;input2&gt; into the calculator</li>
+                <li class="step">
+                  <span class="keyword">When </span>I press multiply</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the result should be equal to &lt;result&gt;</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('multiply')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+            <div>
+              <div class="examples">
+                <h3>Examples: </h3>
+                <div class="table_container">
+                  <table class="datatable">
+                    <thead>
+                      <tr>
+                        <th>input1</th>
+                        <th>input2</th>
+                        <th>result</th>
+                        <th> </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>-1</td>
+                        <td>-1</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td />
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="divide">
+              <h2>Divide</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">And </span>I enter any first input number &lt;input1&gt; into the calculator</li>
+                <li class="step">
+                  <span class="keyword">And </span>I enter a second input number that is not zero &lt;input2&gt; into the calculator</li>
+                <li class="step">
+                  <span class="keyword">When </span>I press divide</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the result should be equal to &lt;result&gt;</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('divide')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+            <div>
+              <div class="examples">
+                <h3>Examples: </h3>
+                <div class="table_container">
+                  <table class="datatable">
+                    <thead>
+                      <tr>
+                        <th>input1</th>
+                        <th>input2</th>
+                        <th>result</th>
+                        <th> </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>-1</td>
+                        <td>-1</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td />
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="modulo">
+              <h2>Modulo</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">And </span>I enter any first input number &lt;input1&gt; into the calculator</li>
+                <li class="step">
+                  <span class="keyword">And </span>I enter a second input number that is not zero &lt;input2&gt; into the calculator</li>
+                <li class="step">
+                  <span class="keyword">When </span>I press modulo</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the result should be equal to &lt;result&gt;</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('modulo')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+            <div>
+              <div class="examples">
+                <h3>Examples: </h3>
+                <div class="table_container">
+                  <table class="datatable">
+                    <thead>
+                      <tr>
+                        <th>input1</th>
+                        <th>input2</th>
+                        <th>result</th>
+                        <th> </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>-1</td>
+                        <td>0</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td />
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="reciprocal">
+              <h2>Reciprocal</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">And </span>I enter a first input number that is not zero &lt;input&gt; into the calculator</li>
+                <li class="step">
+                  <span class="keyword">When </span>I press reciprocal</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the result should be equal to &lt;result&gt;</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('reciprocal')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+            <div>
+              <div class="examples">
+                <h3>Examples: </h3>
+                <div class="table_container">
+                  <table class="datatable">
+                    <thead>
+                      <tr>
+                        <th>input</th>
+                        <th>result</th>
+                        <th> </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>0.5</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>-2</td>
+                        <td>-0.5</td>
+                        <td />
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="exponent">
+              <h2>Exponent</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">And </span>I enter any first input number &lt;input1&gt; into the calculator</li>
+                <li class="step">
+                  <span class="keyword">And </span>I enter any second input number &lt;exponent&gt; into the calculator</li>
+                <li class="step">
+                  <span class="keyword">When </span>I press exponent</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the result should be equal to &lt;result&gt;</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('exponent')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+            <div>
+              <div class="examples">
+                <h3>Examples: </h3>
+                <div class="table_container">
+                  <table class="datatable">
+                    <thead>
+                      <tr>
+                        <th>input1</th>
+                        <th>exponent</th>
+                        <th>result</th>
+                        <th> </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>9</td>
+                        <td />
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="squareroot">
+              <h2>SquareRoot</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">And </span>I enter a first input number that is zero or positive &lt;input&gt; into the calculator</li>
+                <li class="step">
+                  <span class="keyword">When </span>I press squareroot</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the result should be equal to &lt;result&gt;</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('squareroot')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+            <div>
+              <div class="examples">
+                <h3>Examples: </h3>
+                <div class="table_container">
+                  <table class="datatable">
+                    <thead>
+                      <tr>
+                        <th>input</th>
+                        <th>result</th>
+                        <th> </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>3</td>
+                        <td />
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="divide-cannot-divide-by-zero-error-message">
+              <h2>Divide cannot divide by zero error message</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">And </span>I enter a second input number of zero into the calculator</li>
+                <li class="step">
+                  <span class="keyword">When </span>I press divide</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the result should display a division error message</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('divide-cannot-divide-by-zero-error-message')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="modulo-cannot-divide-by-zero-error-message">
+              <h2>Modulo cannot divide by zero error message</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">And </span>I enter a second input number of zero into the calculator</li>
+                <li class="step">
+                  <span class="keyword">When </span>I press modulo</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the result should display a division error message</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('modulo-cannot-divide-by-zero-error-message')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="reciprocal-cannot-divide-by-zero-error-message">
+              <h2>Reciprocal cannot divide by zero error message</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">And </span>I enter a first input number of zero into the calculator</li>
+                <li class="step">
+                  <span class="keyword">When </span>I press reciprocal</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the result should display a division error message</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('reciprocal-cannot-divide-by-zero-error-message')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="squareroot-cannot-accept-negative-numbers-error-message">
+              <h2>SquareRoot cannot accept negative numbers error message</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">And </span>I enter a first input number that is negative -1 into the calculator</li>
+                <li class="step">
+                  <span class="keyword">When </span>I press squareroot</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the result should display an argument error message</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('squareroot-cannot-accept-negative-numbers-error-message')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="divide-cannot-divide-by-zero-error-result">
+              <h2>Divide cannot divide by zero error result</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">And </span>I enter a second input number of zero into the calculator</li>
+                <li class="step">
+                  <span class="keyword">When </span>I press divide</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the result should not display a valid number</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('divide-cannot-divide-by-zero-error-result')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="modulo-cannot-divide-by-zero-error-result">
+              <h2>Modulo cannot divide by zero error result</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">And </span>I enter a second input number of zero into the calculator</li>
+                <li class="step">
+                  <span class="keyword">When </span>I press modulo</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the result should not display a valid number</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('modulo-cannot-divide-by-zero-error-result')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="reciprocal-cannot-divide-by-zero-error-result">
+              <h2>Reciprocal cannot divide by zero error result</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">And </span>I enter a first input number of zero into the calculator</li>
+                <li class="step">
+                  <span class="keyword">When </span>I press reciprocal</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the result should not display a valid number</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('reciprocal-cannot-divide-by-zero-error-result')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="squareroot-cannot-accept-negative-numbers-error-result">
+              <h2>SquareRoot cannot accept negative numbers error result</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">And </span>I enter a first input number that is negative -1 into the calculator</li>
+                <li class="step">
+                  <span class="keyword">When </span>I press squareroot</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the result should not display a valid number</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('squareroot-cannot-accept-negative-numbers-error-result')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="sumofevennumbers">
+              <h2>SumOfEvenNumbers</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">And </span>I enter the numbers below into a list<div class="table_container"><table class="datatable"><thead><tr><th>numbers</th><th> </th></tr></thead><tbody><tr><td>1</td></tr><tr><td>2</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>5</td></tr></tbody></table></div></li>
+                <li class="step">
+                  <span class="keyword">When </span>I iterate through the list to select all even numbers</li>
+                <li class="step">
+                  <span class="keyword">And </span>I add the selected numbers of the list together</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the result should be equal to 6</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('sumofevennumbers')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="sumofoddnumbers">
+              <h2>SumOfOddNumbers</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">And </span>I enter the numbers below into a list<div class="table_container"><table class="datatable"><thead><tr><th>numbers</th><th> </th></tr></thead><tbody><tr><td>1</td></tr><tr><td>2</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>5</td></tr></tbody></table></div></li>
+                <li class="step">
+                  <span class="keyword">When </span>I iterate through the list to select all odd numbers</li>
+                <li class="step">
+                  <span class="keyword">And </span>I add the selected numbers of the list together</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the result should be equal to 9</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('sumofoddnumbers')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="footer">
+        <p>Test results generated for: 1.0, version 1.0</p>
+        <p>Generated on: 18 February 2021 13:26:27</p>
+        <p>Produced by Pickles, version 2.21.0.0</p>
+      </div>
+    </div>
+  </body>
+</html>
