@@ -90,7 +90,7 @@ namespace BDDCalculator
         public void WhenIPressExponent() => _result = _calculator.Exponent();
 
         [When(@"I press squareroot")]
-        public void WhenIPressSquareroot() => _result = _calculator.SquareRoot();
+        public void WhenIPressSquareRoot() => _result = _calculator.SquareRoot();
 
         [When(@"I iterate through the list to select all even numbers")]
         public void WhenIIterateThroughTheListToSelectAllEvenNumbers()
@@ -98,8 +98,8 @@ namespace BDDCalculator
             _calculator.IterateAndSelectEvenNumbers();
         }
 
-        [When(@"I add them together")]
-        public void WhenIAddThemTogether()
+        [When(@"I add the selected numbers of the list together")]
+        public void WhenIAddTheSelectedNumbersOfTheListTogether()
         {
             _result = _calculator.SumOfEvenNumbers();
         }
@@ -124,8 +124,8 @@ namespace BDDCalculator
             Assert.That(_result, Is.NaN);
         }
 
-        [Then(@"the result should be (.*)")]
-        public void ThenTheResultShouldBe(double expected)
+        [Then(@"the result should be equal to (.*)")]
+        public void ThenTheResultShouldBeEqualTo(double expected)
         {
             Assert.That(_result, Is.EqualTo(expected));
         }
