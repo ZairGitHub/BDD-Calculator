@@ -1,5 +1,5 @@
 ﻿Feature: Calculator
-	Simple BDD calculator for performing simple arithmetic with two numbers
+	Simple BDD calculator for handling arithmetic operations with one or two input numbers
 
 Background:
 	Given I have a calculator
@@ -128,7 +128,7 @@ Scenario: SquareRoot cannot accept negative numbers error result
 	When I press squareroot
 	Then the result should not display a valid number
 
-Scenario Outline: SumOfEvenNumbers
+Scenario: SumOfEvenNumbers
 	And I enter the numbers below into a list
 	| numbers |
 	| 1       |
