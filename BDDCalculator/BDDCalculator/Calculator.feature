@@ -5,8 +5,8 @@ Background:
 	Given I have a calculator
 
 Scenario Outline: Addition
-	And I enter my first input number <input1> into the calculator
-	And I enter my second input number of <input2> into the calculator
+	And I enter any first input number <input1> into the calculator
+	And I enter any second input number of <input2> into the calculator
 	When I press add
 	Then the result should be <result>
 	Examples:
@@ -16,8 +16,8 @@ Scenario Outline: Addition
 	| 1		 | 1      | 2      |
 
 Scenario Outline: Subtract
-	And I enter my first input number <input1> into the calculator
-	And I enter my second input number of <input2> into the calculator
+	And I enter any first input number <input1> into the calculator
+	And I enter any second input number of <input2> into the calculator
 	When I press subtract
 	Then the result should be <result>
 	Examples:
@@ -27,8 +27,8 @@ Scenario Outline: Subtract
 	| 1		 | 1      | 0      |
 
 Scenario Outline: Multiply
-	And I enter my first input number <input1> into the calculator
-	And I enter my second input number of <input2> into the calculator
+	And I enter any first input number <input1> into the calculator
+	And I enter any second input number of <input2> into the calculator
 	When I press multiply
 	Then the result should be <result>
 	Examples:
@@ -38,7 +38,7 @@ Scenario Outline: Multiply
 	| 1		 | 1      | 1      |
 
 Scenario Outline: Divide
-	And I enter my first input number <input1> into the calculator
+	And I enter any first input number <input1> into the calculator
 	And I enter a second input number that is not zero <input2> into the calculator
 	When I press divide
 	Then the result should be <result>
@@ -48,7 +48,7 @@ Scenario Outline: Divide
 	| 1      | 1      | 1      |
 	
 Scenario Outline: Modulo
-	And I enter my first input number <input1> into the calculator
+	And I enter any first input number <input1> into the calculator
 	And I enter a second input number that is not zero <input2> into the calculator
 	When I press modulo
 	Then the result should be <result>
@@ -68,8 +68,8 @@ Scenario Outline: Reciprocal
 	| 4      | 0.25	  |
 
 Scenario Outline: Exponent
-	And I enter my first input number <input1> into the calculator
-	And I enter my second input number of <exponent> into the calculator
+	And I enter any first input number <input1> into the calculator
+	And I enter any second input number of <exponent> into the calculator
 	When I press exponent
 	Then the result should be <result>
 	Examples:

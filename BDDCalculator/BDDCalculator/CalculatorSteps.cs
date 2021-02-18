@@ -14,8 +14,8 @@ namespace BDDCalculator
         [Given(@"I have a calculator")]
         public void GivenIHaveACalculator() => _calculator = new Calculator();
 
-        [Given(@"I enter my first input number (.*) into the calculator")]
-        public void GivenIEnterMyFirstInputNumberIntoTheCalculator(double input)
+        [Given(@"I enter any first input number (.*) into the calculator")]
+        public void GivenIEnterAnyFirstInputNumberIntoTheCalculator(double input)
         {
             _calculator.Input1 = input;
         }
@@ -44,8 +44,8 @@ namespace BDDCalculator
             _calculator.Input1 = input;
         }
 
-        [Given(@"I enter my second input number of (.*) into the calculator")]
-        public void GivenIEnterMySecondInputNumberOfIntoTheCalculator(double input)
+        [Given(@"I enter any second input number of (.*) into the calculator")]
+        public void GivenIEnterAnySecondInputNumberOfIntoTheCalculator(double input)
         {
             _calculator.Input2 = input;
         }
