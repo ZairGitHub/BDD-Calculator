@@ -118,16 +118,16 @@ namespace BDDCalculator
                 .With.Message.EqualTo("Cannot square root negative numbers"));
         }
 
-        [Then(@"the result should be (.*)")]
-        public void ThenTheResultShouldBe(double expected)
-        {
-            Assert.That(_result, Is.EqualTo(expected));
-        }
-
         [Then(@"the result should not display a valid number")]
         public void ThenTheResultShouldNotDisplayAValidNumber()
         {
             Assert.That(_result, Is.NaN);
+        }
+
+        [Then(@"the result should be (.*)")]
+        public void ThenTheResultShouldBe(double expected)
+        {
+            Assert.That(_result, Is.EqualTo(expected));
         }
     }
 }

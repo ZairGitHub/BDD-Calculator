@@ -618,12 +618,12 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("SquareRoot cannot accept negative numbers")]
-        public virtual void SquareRootCannotAcceptNegativeNumbers()
+        [NUnit.Framework.DescriptionAttribute("SquareRoot cannot accept negative numbers error message")]
+        public virtual void SquareRootCannotAcceptNegativeNumbersErrorMessage()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("SquareRoot cannot accept negative numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("SquareRoot cannot accept negative numbers error message", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 106
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -790,13 +790,56 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("SquareRoot cannot accept negative numbers error result")]
+        public virtual void SquareRootCannotAcceptNegativeNumbersErrorResult()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("SquareRoot cannot accept negative numbers error result", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 126
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 4
+this.FeatureBackground();
+#line hidden
+#line 127
+ testRunner.And("I enter a first input number that is negative -1 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 128
+ testRunner.When("I press squareroot", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 129
+ testRunner.Then("the result should not display a valid number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("SumOfEvenNumbers")]
         public virtual void SumOfEvenNumbers()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("SumOfEvenNumbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 126
+#line 131
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -831,16 +874,16 @@ this.FeatureBackground();
                             "4"});
                 table1.AddRow(new string[] {
                             "5"});
-#line 127
+#line 132
  testRunner.And("I enter the numbers below into a list", ((string)(null)), table1, "And ");
 #line hidden
-#line 134
+#line 139
  testRunner.When("I iterate through the list to select all even numbers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 135
+#line 140
  testRunner.And("I add them together", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 136
+#line 141
  testRunner.Then("the result should be 6", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
