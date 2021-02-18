@@ -139,3 +139,15 @@ Scenario: SumOfEvenNumbers
 	When I iterate through the list to select all even numbers
 	And I add the selected numbers of the list together
 	Then the result should be equal to 6
+
+Scenario: SumOfOddNumbers
+	And I enter the numbers below into a list
+	| numbers |
+	| 1       |
+	| 2       |
+	| 3       |
+	| 4       |
+	| 5       |
+	When I iterate through the list to select all odd numbers
+	And I add the selected numbers of the list together
+	Then the result should be equal to 9

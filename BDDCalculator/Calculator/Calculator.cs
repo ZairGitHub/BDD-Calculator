@@ -74,6 +74,11 @@ namespace CalculatorLibrary
             _numbersList = _numbersList.Where(i => i % 2 == 0).ToList();
         }
 
-        public double SumOfEvenNumbers() => _numbersList.Sum();
+        public void IterateAndSelectOddNumbers()
+        {
+            _numbersList = _numbersList.Where(i => i % 2 != 0).ToList();
+        }
+
+        public double SumOfSelectedNumbers() => _numbersList.Sum();
     }
 }

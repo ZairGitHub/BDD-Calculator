@@ -98,10 +98,16 @@ namespace BDDCalculator
             _calculator.IterateAndSelectEvenNumbers();
         }
 
+        [When(@"I iterate through the list to select all odd numbers")]
+        public void WhenIIterateThroughTheListToSelectAllOddNumbers()
+        {
+            _calculator.IterateAndSelectOddNumbers();
+        }
+
         [When(@"I add the selected numbers of the list together")]
         public void WhenIAddTheSelectedNumbersOfTheListTogether()
         {
-            _result = _calculator.SumOfEvenNumbers();
+            _result = _calculator.SumOfSelectedNumbers();
         }
 
         [Then(@"the result should display a division error message")]
