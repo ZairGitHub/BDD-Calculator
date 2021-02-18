@@ -123,5 +123,11 @@ namespace BDDCalculator
         {
             Assert.That(_result, Is.EqualTo(expected));
         }
+
+        [Then(@"the result should not display a valid number")]
+        public void ThenTheResultShouldNotDisplayAValidNumber()
+        {
+            Assert.That(_result, Is.NaN);
+        }
     }
 }

@@ -88,10 +88,15 @@ Scenario Outline: SquareRoot
 	| 1     | 1		 |
 	| 9     | 3		 |
 
-Scenario: Divide cannot divide by zero
+Scenario: Divide cannot divide by zero error message
 	And I enter a second input number of zero into the calculator
 	When I press divide
 	Then the result should display a division error message
+
+Scenario: Divide cannot divide by zero error result
+	And I enter a second input number of zero into the calculator
+	When I press divide
+	Then the result should not display a valid number
 
 Scenario: Modulo cannot divide by zero
 	And I enter a second input number of zero into the calculator
