@@ -93,17 +93,12 @@ Scenario: Divide cannot divide by zero error message
 	When I press divide
 	Then the result should display a division error message
 
-Scenario: Divide cannot divide by zero error result
-	And I enter a second input number of zero into the calculator
-	When I press divide
-	Then the result should not display a valid number
-
-Scenario: Modulo cannot divide by zero
+Scenario: Modulo cannot divide by zero error message
 	And I enter a second input number of zero into the calculator
 	When I press modulo
 	Then the result should display a division error message
 
-Scenario: Reciprocal cannot divide by zero
+Scenario: Reciprocal cannot divide by zero error message
 	And I enter a first input number of zero into the calculator
 	When I press reciprocal
 	Then the result should display a division error message
@@ -112,6 +107,21 @@ Scenario: SquareRoot cannot accept negative numbers
 	And I enter a first input number that is negative -1 into the calculator
 	When I press squareroot
 	Then the result should display an argument error message
+
+Scenario: Divide cannot divide by zero error result
+	And I enter a second input number of zero into the calculator
+	When I press divide
+	Then the result should not display a valid number
+
+Scenario: Modulo cannot divide by zero error result
+	And I enter a second input number of zero into the calculator
+	When I press modulo
+	Then the result should not display a valid number
+
+Scenario: Reciprocal cannot divide by zero error result
+	And I enter a first input number of zero into the calculator
+	When I press reciprocal
+	Then the result should not display a valid number
 
 Scenario Outline: SumOfEvenNumbers
 	And I enter the numbers below into a list
