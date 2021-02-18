@@ -1,135 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TestRun id="4db6f76c-416c-4811-bca7-a6bbb3c4e43d" name="Zair@DESKTOP-H5CMDB4 2021-02-18 18:04:30" runUser="DESKTOP-H5CMDB4\Zair" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <Times creation="2021-02-18T18:04:30.1509579+00:00" queuing="2021-02-18T18:04:30.1509593+00:00" start="2021-02-18T18:04:27.4836257+00:00" finish="2021-02-18T18:04:30.5475413+00:00" />
-  <TestSettings name="default" id="8e6753b2-896b-4d5c-9b87-0616ba030d4e">
-    <Deployment runDeploymentRoot="Zair_DESKTOP-H5CMDB4_2021-02-18_18_04_30" />
+<TestRun id="e7418695-2c22-4750-aabc-f8cf75aab38a" name="Zair@DESKTOP-H5CMDB4 2021-02-18 18:32:49" runUser="DESKTOP-H5CMDB4\Zair" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2021-02-18T18:32:49.1474509+00:00" queuing="2021-02-18T18:32:49.1474520+00:00" start="2021-02-18T18:32:46.7229035+00:00" finish="2021-02-18T18:32:49.4971409+00:00" />
+  <TestSettings name="default" id="7e0b0a67-4b81-4ad7-9ed7-702c6287eaab">
+    <Deployment runDeploymentRoot="Zair_DESKTOP-H5CMDB4_2021-02-18_18_32_49" />
   </TestSettings>
   <Results>
-    <UnitTestResult executionId="a6df08c1-1382-47d9-8e7e-d9d3aa2b6e82" testId="62ab0eaa-6414-8603-c9ae-47ab61766269" testName="Modulo(&quot;1&quot;,&quot;-1&quot;,&quot;0&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0051500" startTime="2021-02-18T18:04:30.0485579+00:00" endTime="2021-02-18T18:04:30.0537092+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6df08c1-1382-47d9-8e7e-d9d3aa2b6e82">
+    <UnitTestResult executionId="c9d4c35d-15ef-4e86-a2aa-c20edb31f1bf" testId="4c05a0d3-a95b-7068-c4e8-d4cb95d820c0" testName="Reciprocal(&quot;-2&quot;,&quot;-0.5&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0009550" startTime="2021-02-18T18:32:49.0097327+00:00" endTime="2021-02-18T18:32:49.0106873+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9d4c35d-15ef-4e86-a2aa-c20edb31f1bf">
       <Output>
         <StdOut>Given I have a calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter any first input number 1 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(1) (0.0s)&#xD;
-And I enter a second input number that is not zero -1 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterASecondInputNumberThatIsNotZeroIntoTheCalculator(-1) (0.0s)&#xD;
-When I press modulo&#xD;
--&gt; done: CalculatorSteps.WhenIPressModulo() (0.0s)&#xD;
-Then the result should be equal to 0&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(0) (0.0s)</StdOut>
+And I enter a first input number that is not zero -2 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberThatIsNotZeroIntoTheCalculator(-2) (0.0s)&#xD;
+When I press reciprocal&#xD;
+-&gt; done: CalculatorSteps.WhenIPressReciprocal() (0.0s)&#xD;
+Then the result should be equal to -0.5&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(-0.5) (0.0s)</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="9bb5e450-c9c6-49e4-ad75-53527ecbfb57" testId="3b33a3ff-ef38-238b-529b-a6d1cc8c85c4" testName="ModuloCannotDivideByZeroErrorMessage" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0014110" startTime="2021-02-18T18:04:30.0548931+00:00" endTime="2021-02-18T18:04:30.0563037+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9bb5e450-c9c6-49e4-ad75-53527ecbfb57">
+    <UnitTestResult executionId="4d790e0d-8646-472a-97e4-d1d4971fbda6" testId="21d08c16-5534-10b8-5f67-dd9f90a337c8" testName="Reciprocal(&quot;1&quot;,&quot;1&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0046160" startTime="2021-02-18T18:32:49.0040682+00:00" endTime="2021-02-18T18:32:49.0086840+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d790e0d-8646-472a-97e4-d1d4971fbda6">
       <Output>
         <StdOut>Given I have a calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter a second input number of zero into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterASecondInputNumberOfZeroIntoTheCalculator() (0.0s)&#xD;
-When I press modulo&#xD;
--&gt; done: CalculatorSteps.WhenIPressModulo() (0.0s)&#xD;
+And I enter a first input number that is not zero 1 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberThatIsNotZeroIntoTheCalculator(1) (0.0s)&#xD;
+When I press reciprocal&#xD;
+-&gt; done: CalculatorSteps.WhenIPressReciprocal() (0.0s)&#xD;
+Then the result should be equal to 1&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(1) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="74871e4c-f10a-4bda-aecc-7840a9c2f1c7" testId="92344ea4-5961-d95f-71e8-11b871745c3d" testName="ReciprocalCannotDivideByZeroErrorResult" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0013550" startTime="2021-02-18T18:32:49.0143284+00:00" endTime="2021-02-18T18:32:49.0156838+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="74871e4c-f10a-4bda-aecc-7840a9c2f1c7">
+      <Output>
+        <StdOut>Given I have a calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
+And I enter a first input number of zero into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberOfZeroIntoTheCalculator() (0.0s)&#xD;
+When I press reciprocal&#xD;
+-&gt; done: CalculatorSteps.WhenIPressReciprocal() (0.0s)&#xD;
+Then the result should not display a valid number&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldNotDisplayAValidNumber() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1fb209d7-0794-4a6d-9cf8-4769f4b85b0a" testId="c61881e7-54b5-62a2-7b25-4de579ad179c" testName="ReciprocalCannotDivideByZeroErrorMessage" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0035600" startTime="2021-02-18T18:32:49.0107414+00:00" endTime="2021-02-18T18:32:49.0143013+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1fb209d7-0794-4a6d-9cf8-4769f4b85b0a">
+      <Output>
+        <StdOut>Given I have a calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
+And I enter a first input number of zero into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberOfZeroIntoTheCalculator() (0.0s)&#xD;
+When I press reciprocal&#xD;
+-&gt; done: CalculatorSteps.WhenIPressReciprocal() (0.0s)&#xD;
 Then the result should display a division error message&#xD;
 -&gt; done: CalculatorSteps.ThenTheResultShouldDisplayADivisionErrorMessage() (0.0s)</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="855353c0-d55f-4afa-ad41-c98abbff5190" testId="7cfd5c20-858c-e729-9033-897264157505" testName="Subtract(&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0019870" startTime="2021-02-18T18:04:30.1446738+00:00" endTime="2021-02-18T18:04:30.1466631+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="855353c0-d55f-4afa-ad41-c98abbff5190">
-      <Output>
-        <StdOut>Given I have a calculator&#xD;
--&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter any first input number 1 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(1) (0.0s)&#xD;
-And I enter any second input number 1 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnySecondInputNumberIntoTheCalculator(1) (0.0s)&#xD;
-When I press subtract&#xD;
--&gt; done: CalculatorSteps.WhenIPressSubtract() (0.0s)&#xD;
-Then the result should be equal to 0&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(0) (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="7d6754d8-3791-4ecc-ae86-81dd044260c7" testId="040840f3-64e3-6510-ad4d-6667ac473118" testName="Exponent(&quot;2&quot;,&quot;2&quot;,&quot;4&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0025480" startTime="2021-02-18T18:04:30.0442888+00:00" endTime="2021-02-18T18:04:30.0468377+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d6754d8-3791-4ecc-ae86-81dd044260c7">
-      <Output>
-        <StdOut>Given I have a calculator&#xD;
--&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter any first input number 2 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(2) (0.0s)&#xD;
-And I enter any second input number 2 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnySecondInputNumberIntoTheCalculator(2) (0.0s)&#xD;
-When I press exponent&#xD;
--&gt; done: CalculatorSteps.WhenIPressExponent() (0.0s)&#xD;
-Then the result should be equal to 4&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(4) (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="ac69fbdf-d259-478c-bedc-08292c32c7d6" testId="060cbaea-1998-eabc-c46c-4fda9b3a957a" testName="Subtract(&quot;1&quot;,&quot;0&quot;,&quot;1&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0016990" startTime="2021-02-18T18:04:30.1409495+00:00" endTime="2021-02-18T18:04:30.1426490+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ac69fbdf-d259-478c-bedc-08292c32c7d6">
-      <Output>
-        <StdOut>Given I have a calculator&#xD;
--&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter any first input number 1 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(1) (0.0s)&#xD;
-And I enter any second input number 0 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnySecondInputNumberIntoTheCalculator(0) (0.0s)&#xD;
-When I press subtract&#xD;
--&gt; done: CalculatorSteps.WhenIPressSubtract() (0.0s)&#xD;
-Then the result should be equal to 1&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(1) (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="d1fe89d0-9df3-4331-a84f-0eb1875af80d" testId="442f9e90-9cfa-a2e5-50dd-d769707fe93d" testName="Divide(&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0015460" startTime="2021-02-18T18:04:29.9402864+00:00" endTime="2021-02-18T18:04:29.9418353+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d1fe89d0-9df3-4331-a84f-0eb1875af80d">
-      <Output>
-        <StdOut>Given I have a calculator&#xD;
--&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter any first input number 1 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(1) (0.0s)&#xD;
-And I enter a second input number that is not zero 1 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterASecondInputNumberThatIsNotZeroIntoTheCalculator(1) (0.0s)&#xD;
-When I press divide&#xD;
--&gt; done: CalculatorSteps.WhenIPressDivide() (0.0s)&#xD;
-Then the result should be equal to 1&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(1) (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="82601f8b-824c-45e1-9092-e969b1b25660" testId="3607f840-cc88-60c2-2ed9-342799ae2877" testName="Exponent(&quot;3&quot;,&quot;2&quot;,&quot;9&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0014750" startTime="2021-02-18T18:04:30.0469143+00:00" endTime="2021-02-18T18:04:30.0483891+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="82601f8b-824c-45e1-9092-e969b1b25660">
-      <Output>
-        <StdOut>Given I have a calculator&#xD;
--&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter any first input number 3 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(3) (0.0s)&#xD;
-And I enter any second input number 2 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnySecondInputNumberIntoTheCalculator(2) (0.0s)&#xD;
-When I press exponent&#xD;
--&gt; done: CalculatorSteps.WhenIPressExponent() (0.0s)&#xD;
-Then the result should be equal to 9&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(9) (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="1f856b2f-f935-4e39-acf2-6643b877a530" testId="e8464b1f-5030-550a-4e99-a581ef53168c" testName="Addition(&quot;1&quot;,&quot;0&quot;,&quot;1&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0046920" startTime="2021-02-18T18:04:29.9189490+00:00" endTime="2021-02-18T18:04:29.9236399+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f856b2f-f935-4e39-acf2-6643b877a530">
-      <Output>
-        <StdOut>Given I have a calculator&#xD;
--&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter any first input number 1 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(1) (0.0s)&#xD;
-And I enter any second input number 0 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnySecondInputNumberIntoTheCalculator(0) (0.0s)&#xD;
-When I press add&#xD;
--&gt; done: CalculatorSteps.WhenIPressAdd() (0.0s)&#xD;
-Then the result should be equal to 1&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(1) (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="2467fd06-d19d-4723-8f59-62782d5b8f65" testId="8a46b8cf-27be-9d96-7d1e-1be25f7a648d" testName="Multiply(&quot;1&quot;,&quot;0&quot;,&quot;0&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0015020" startTime="2021-02-18T18:04:30.0723094+00:00" endTime="2021-02-18T18:04:30.0738146+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2467fd06-d19d-4723-8f59-62782d5b8f65">
-      <Output>
-        <StdOut>Given I have a calculator&#xD;
--&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter any first input number 1 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(1) (0.0s)&#xD;
-And I enter any second input number 0 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnySecondInputNumberIntoTheCalculator(0) (0.0s)&#xD;
-When I press multiply&#xD;
--&gt; done: CalculatorSteps.WhenIPressMultiply() (0.0s)&#xD;
-Then the result should be equal to 0&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(0) (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="74255f41-2923-43e1-8c30-f6916d204576" testId="ee8915fd-2ccd-8ea4-f544-b3d01c1efe0c" testName="DivideCannotDivideByZeroErrorResult" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0045840" startTime="2021-02-18T18:04:30.0326389+00:00" endTime="2021-02-18T18:04:30.0372265+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="74255f41-2923-43e1-8c30-f6916d204576">
+    <UnitTestResult executionId="b582152c-2d2d-4320-872d-635fc11d6004" testId="ee8915fd-2ccd-8ea4-f544-b3d01c1efe0c" testName="DivideCannotDivideByZeroErrorResult" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0035510" startTime="2021-02-18T18:32:48.9642377+00:00" endTime="2021-02-18T18:32:48.9677891+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b582152c-2d2d-4320-872d-635fc11d6004">
       <Output>
         <StdOut>Given I have a calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
@@ -141,40 +65,7 @@ Then the result should not display a valid number&#xD;
 -&gt; done: CalculatorSteps.ThenTheResultShouldNotDisplayAValidNumber() (0.0s)</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="c3546e7f-4246-4ce8-ac9f-82531d3d8c1f" testId="1a57df16-ef7e-11ef-2db6-604506c8df14" testName="SquareRoot(&quot;9&quot;,&quot;3&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0008600" startTime="2021-02-18T18:04:30.1173376+00:00" endTime="2021-02-18T18:04:30.1181979+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c3546e7f-4246-4ce8-ac9f-82531d3d8c1f">
-      <Output>
-        <StdOut>Given I have a calculator&#xD;
--&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter a first input number that is zero or positive 9 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberThatIsZeroOrPositiveIntoTheCalculator(9) (0.0s)&#xD;
-When I press squareroot&#xD;
--&gt; done: CalculatorSteps.WhenIPressSquareRoot() (0.0s)&#xD;
-Then the result should be equal to 3&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(3) (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="9865299b-34a5-46aa-9744-078a883f1582" testId="400450c4-728f-0dce-c668-a78ed895077d" testName="SumOfOddNumbers" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0041610" startTime="2021-02-18T18:04:30.1940391+00:00" endTime="2021-02-18T18:04:30.1982020+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9865299b-34a5-46aa-9744-078a883f1582">
-      <Output>
-        <StdOut>Given I have a calculator&#xD;
--&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter the numbers below into a list&#xD;
-  --- table step argument ---&#xD;
-  | numbers |&#xD;
-  | 1       |&#xD;
-  | 2       |&#xD;
-  | 3       |&#xD;
-  | 4       |&#xD;
-  | 5       |&#xD;
--&gt; done: CalculatorSteps.GivenIEnterTheNumbersBelowIntoAList(&lt;table&gt;) (0.0s)&#xD;
-When I iterate through the list to select all odd numbers&#xD;
--&gt; done: CalculatorSteps.WhenIIterateThroughTheListToSelectAllOddNumbers() (0.0s)&#xD;
-And I add the selected numbers of the list together&#xD;
--&gt; done: CalculatorSteps.WhenIAddTheSelectedNumbersOfTheListTogether() (0.0s)&#xD;
-Then the result should be equal to 9&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(9) (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="6cd73001-6a99-4647-acb4-3e6871347bb2" testId="7fa7ff6d-06ff-f1ec-6f50-8360d401f273" testName="SumOfEvenNumbers" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0254780" startTime="2021-02-18T18:04:30.1646254+00:00" endTime="2021-02-18T18:04:30.1901106+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6cd73001-6a99-4647-acb4-3e6871347bb2">
+    <UnitTestResult executionId="7a49cdd4-fb6e-4af9-a614-5c9e91350abc" testId="7fa7ff6d-06ff-f1ec-6f50-8360d401f273" testName="SumOfEvenNumbers" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0277950" startTime="2021-02-18T18:32:49.0415989+00:00" endTime="2021-02-18T18:32:49.0693955+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7a49cdd4-fb6e-4af9-a614-5c9e91350abc">
       <Output>
         <StdOut>Given I have a calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
@@ -195,7 +86,99 @@ Then the result should be equal to 6&#xD;
 -&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(6) (0.0s)</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="50c90960-c261-4833-80b8-a633960bf0dd" testId="46840a2b-3056-4c41-53b0-9e8824a2f15f" testName="ModuloCannotDivideByZeroErrorResult" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0013640" startTime="2021-02-18T18:04:30.0563299+00:00" endTime="2021-02-18T18:04:30.0576939+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="50c90960-c261-4833-80b8-a633960bf0dd">
+    <UnitTestResult executionId="7d20540c-ba32-42eb-bd2f-ac57ee2a688e" testId="8a46b8cf-27be-9d96-7d1e-1be25f7a648d" testName="Multiply(&quot;1&quot;,&quot;0&quot;,&quot;0&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0058920" startTime="2021-02-18T18:32:48.9969426+00:00" endTime="2021-02-18T18:32:49.0028338+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d20540c-ba32-42eb-bd2f-ac57ee2a688e">
+      <Output>
+        <StdOut>Given I have a calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
+And I enter any first input number 1 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(1) (0.0s)&#xD;
+And I enter any second input number 0 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnySecondInputNumberIntoTheCalculator(0) (0.0s)&#xD;
+When I press multiply&#xD;
+-&gt; done: CalculatorSteps.WhenIPressMultiply() (0.0s)&#xD;
+Then the result should be equal to 0&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(0) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="82e2b558-9a84-43fb-a4d5-8d31d6a866d2" testId="060cbaea-1998-eabc-c46c-4fda9b3a957a" testName="Subtract(&quot;1&quot;,&quot;0&quot;,&quot;1&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0011310" startTime="2021-02-18T18:32:49.0392356+00:00" endTime="2021-02-18T18:32:49.0403665+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="82e2b558-9a84-43fb-a4d5-8d31d6a866d2">
+      <Output>
+        <StdOut>Given I have a calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
+And I enter any first input number 1 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(1) (0.0s)&#xD;
+And I enter any second input number 0 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnySecondInputNumberIntoTheCalculator(0) (0.0s)&#xD;
+When I press subtract&#xD;
+-&gt; done: CalculatorSteps.WhenIPressSubtract() (0.0s)&#xD;
+Then the result should be equal to 1&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(1) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4d6eac5f-e0cf-4eef-97bc-1022e0fe0f8f" testId="1a57df16-ef7e-11ef-2db6-604506c8df14" testName="SquareRoot(&quot;9&quot;,&quot;3&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0010160" startTime="2021-02-18T18:32:49.0273285+00:00" endTime="2021-02-18T18:32:49.0283433+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d6eac5f-e0cf-4eef-97bc-1022e0fe0f8f">
+      <Output>
+        <StdOut>Given I have a calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
+And I enter a first input number that is zero or positive 9 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberThatIsZeroOrPositiveIntoTheCalculator(9) (0.0s)&#xD;
+When I press squareroot&#xD;
+-&gt; done: CalculatorSteps.WhenIPressSquareRoot() (0.0s)&#xD;
+Then the result should be equal to 3&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(3) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="79272256-e7da-4a1a-b402-fc6014eb4573" testId="8f65ac51-ca70-9747-1c08-a9e37612f1e7" testName="SquareRootCannotAcceptNegativeNumbersErrorResult" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0019780" startTime="2021-02-18T18:32:49.0336957+00:00" endTime="2021-02-18T18:32:49.0356733+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="79272256-e7da-4a1a-b402-fc6014eb4573">
+      <Output>
+        <StdOut>Given I have a calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
+And I enter a first input number that is negative -1 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberThatIsNegativeIntoTheCalculator(-1) (0.0s)&#xD;
+When I press squareroot&#xD;
+-&gt; done: CalculatorSteps.WhenIPressSquareRoot() (0.0s)&#xD;
+Then the result should not display a valid number&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldNotDisplayAValidNumber() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="31352bdb-1a89-4b2e-aaa4-8dbc49d9681a" testId="22988a10-e856-1642-1e88-9b91939c24b8" testName="Reciprocal(&quot;2&quot;,&quot;0.5&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0009830" startTime="2021-02-18T18:32:49.0087171+00:00" endTime="2021-02-18T18:32:49.0096991+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="31352bdb-1a89-4b2e-aaa4-8dbc49d9681a">
+      <Output>
+        <StdOut>Given I have a calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
+And I enter a first input number that is not zero 2 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberThatIsNotZeroIntoTheCalculator(2) (0.0s)&#xD;
+When I press reciprocal&#xD;
+-&gt; done: CalculatorSteps.WhenIPressReciprocal() (0.0s)&#xD;
+Then the result should be equal to 0.5&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(0.5) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6b0f3cec-7803-4840-9123-f87de6e69176" testId="442f9e90-9cfa-a2e5-50dd-d769707fe93d" testName="Divide(&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0016820" startTime="2021-02-18T18:32:48.9308020+00:00" endTime="2021-02-18T18:32:48.9324836+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b0f3cec-7803-4840-9123-f87de6e69176">
+      <Output>
+        <StdOut>Given I have a calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
+And I enter any first input number 1 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(1) (0.0s)&#xD;
+And I enter a second input number that is not zero 1 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterASecondInputNumberThatIsNotZeroIntoTheCalculator(1) (0.0s)&#xD;
+When I press divide&#xD;
+-&gt; done: CalculatorSteps.WhenIPressDivide() (0.0s)&#xD;
+Then the result should be equal to 1&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(1) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d9fdb8af-6386-4e1a-8122-2813117442f2" testId="3607f840-cc88-60c2-2ed9-342799ae2877" testName="Exponent(&quot;3&quot;,&quot;2&quot;,&quot;9&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0022090" startTime="2021-02-18T18:32:48.9763401+00:00" endTime="2021-02-18T18:32:48.9785500+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d9fdb8af-6386-4e1a-8122-2813117442f2">
+      <Output>
+        <StdOut>Given I have a calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
+And I enter any first input number 3 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(3) (0.0s)&#xD;
+And I enter any second input number 2 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnySecondInputNumberIntoTheCalculator(2) (0.0s)&#xD;
+When I press exponent&#xD;
+-&gt; done: CalculatorSteps.WhenIPressExponent() (0.0s)&#xD;
+Then the result should be equal to 9&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(9) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a654175a-92ae-4c44-9776-8a49ced3190c" testId="3b33a3ff-ef38-238b-529b-a6d1cc8c85c4" testName="ModuloCannotDivideByZeroErrorMessage" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0022529" startTime="2021-02-18T18:32:48.9878024+00:00" endTime="2021-02-18T18:32:48.9900547+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a654175a-92ae-4c44-9776-8a49ced3190c">
       <Output>
         <StdOut>Given I have a calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
@@ -203,37 +186,11 @@ And I enter a second input number of zero into the calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIEnterASecondInputNumberOfZeroIntoTheCalculator() (0.0s)&#xD;
 When I press modulo&#xD;
 -&gt; done: CalculatorSteps.WhenIPressModulo() (0.0s)&#xD;
-Then the result should not display a valid number&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldNotDisplayAValidNumber() (0.0s)</StdOut>
+Then the result should display a division error message&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldDisplayADivisionErrorMessage() (0.0s)</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="58e4cc97-ba47-486b-8feb-329f8d148655" testId="4c05a0d3-a95b-7068-c4e8-d4cb95d820c0" testName="Reciprocal(&quot;-2&quot;,&quot;-0.5&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0014139" startTime="2021-02-18T18:04:30.0869766+00:00" endTime="2021-02-18T18:04:30.0883893+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="58e4cc97-ba47-486b-8feb-329f8d148655">
-      <Output>
-        <StdOut>Given I have a calculator&#xD;
--&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter a first input number that is not zero -2 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberThatIsNotZeroIntoTheCalculator(-2) (0.0s)&#xD;
-When I press reciprocal&#xD;
--&gt; done: CalculatorSteps.WhenIPressReciprocal() (0.0s)&#xD;
-Then the result should be equal to -0.5&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(-0.5) (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="a95556b6-c7ac-4d04-bd67-aacfa2dd332b" testId="9534263a-6863-096c-e037-58664b60eb28" testName="Multiply(&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0013960" startTime="2021-02-18T18:04:30.0745129+00:00" endTime="2021-02-18T18:04:30.0759108+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a95556b6-c7ac-4d04-bd67-aacfa2dd332b">
-      <Output>
-        <StdOut>Given I have a calculator&#xD;
--&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter any first input number 1 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(1) (0.0s)&#xD;
-And I enter any second input number 1 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnySecondInputNumberIntoTheCalculator(1) (0.0s)&#xD;
-When I press multiply&#xD;
--&gt; done: CalculatorSteps.WhenIPressMultiply() (0.0s)&#xD;
-Then the result should be equal to 1&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(1) (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="b7770ba4-f6a7-42ee-8250-298d9637272e" testId="76491693-85ab-5100-3aa0-a17b845f460a" testName="Addition(&quot;1&quot;,&quot;1&quot;,&quot;2&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0013580" startTime="2021-02-18T18:04:29.9237126+00:00" endTime="2021-02-18T18:04:29.9250710+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b7770ba4-f6a7-42ee-8250-298d9637272e">
+    <UnitTestResult executionId="95ed467a-5ed9-496c-8ad7-b6f8720eccf2" testId="76491693-85ab-5100-3aa0-a17b845f460a" testName="Addition(&quot;1&quot;,&quot;1&quot;,&quot;2&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0014130" startTime="2021-02-18T18:32:48.9165493+00:00" endTime="2021-02-18T18:32:48.9179652+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="95ed467a-5ed9-496c-8ad7-b6f8720eccf2">
       <Output>
         <StdOut>Given I have a calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
@@ -247,59 +204,54 @@ Then the result should be equal to 2&#xD;
 -&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(2) (0.0s)</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="d804adc7-d86c-41bb-a522-920c21f4e8e5" testId="72676448-bc79-37f4-6294-5f9a97698e55" testName="SquareRoot(&quot;1&quot;,&quot;1&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0009540" startTime="2021-02-18T18:04:30.1163416+00:00" endTime="2021-02-18T18:04:30.1172960+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d804adc7-d86c-41bb-a522-920c21f4e8e5">
-      <Output>
-        <StdOut>Given I have a calculator&#xD;
--&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter a first input number that is zero or positive 1 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberThatIsZeroOrPositiveIntoTheCalculator(1) (0.0s)&#xD;
-When I press squareroot&#xD;
--&gt; done: CalculatorSteps.WhenIPressSquareRoot() (0.0s)&#xD;
-Then the result should be equal to 1&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(1) (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="0786a28e-7cbc-40ff-b479-ec6662fa2ad9" testId="2c1ee02f-af88-72f0-7e8a-6b1654cb7772" testName="Exponent(&quot;1&quot;,&quot;2&quot;,&quot;1&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0059890" startTime="2021-02-18T18:04:30.0382423+00:00" endTime="2021-02-18T18:04:30.0442333+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0786a28e-7cbc-40ff-b479-ec6662fa2ad9">
+    <UnitTestResult executionId="1d5c7a50-83a9-4a43-aa6d-a71fd05e8ee5" testId="62ab0eaa-6414-8603-c9ae-47ab61766269" testName="Modulo(&quot;1&quot;,&quot;-1&quot;,&quot;0&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0042240" startTime="2021-02-18T18:32:48.9787033+00:00" endTime="2021-02-18T18:32:48.9829272+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1d5c7a50-83a9-4a43-aa6d-a71fd05e8ee5">
       <Output>
         <StdOut>Given I have a calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
 And I enter any first input number 1 into the calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(1) (0.0s)&#xD;
-And I enter any second input number 2 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnySecondInputNumberIntoTheCalculator(2) (0.0s)&#xD;
-When I press exponent&#xD;
--&gt; done: CalculatorSteps.WhenIPressExponent() (0.0s)&#xD;
-Then the result should be equal to 1&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(1) (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="d0bca424-9eee-4559-b350-4181833534a2" testId="21d08c16-5534-10b8-5f67-dd9f90a337c8" testName="Reciprocal(&quot;1&quot;,&quot;1&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0070890" startTime="2021-02-18T18:04:30.0786240+00:00" endTime="2021-02-18T18:04:30.0857153+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d0bca424-9eee-4559-b350-4181833534a2">
-      <Output>
-        <StdOut>Given I have a calculator&#xD;
--&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter a first input number that is not zero 1 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberThatIsNotZeroIntoTheCalculator(1) (0.0s)&#xD;
-When I press reciprocal&#xD;
--&gt; done: CalculatorSteps.WhenIPressReciprocal() (0.0s)&#xD;
-Then the result should be equal to 1&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(1) (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="3408ecc0-2a67-4dcc-ac25-b6629199e413" testId="fe5077e0-126f-c2bd-6137-b3ac7ca08be7" testName="Addition(&quot;1&quot;,&quot;-1&quot;,&quot;0&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.1216750" startTime="2021-02-18T18:04:29.7932684+00:00" endTime="2021-02-18T18:04:29.9147465+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3408ecc0-2a67-4dcc-ac25-b6629199e413">
-      <Output>
-        <StdOut>Given I have a calculator&#xD;
--&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter any first input number 1 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(1) (0.0s)&#xD;
-And I enter any second input number -1 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAnySecondInputNumberIntoTheCalculator(-1) (0.0s)&#xD;
-When I press add&#xD;
--&gt; done: CalculatorSteps.WhenIPressAdd() (0.0s)&#xD;
+And I enter a second input number that is not zero -1 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterASecondInputNumberThatIsNotZeroIntoTheCalculator(-1) (0.0s)&#xD;
+When I press modulo&#xD;
+-&gt; done: CalculatorSteps.WhenIPressModulo() (0.0s)&#xD;
 Then the result should be equal to 0&#xD;
 -&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(0) (0.0s)</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="3164200a-93ae-4a3a-b82e-06a4ccaf1805" testId="f896a2e1-42f4-0d6d-571b-0029d264c2ea" testName="Modulo(&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0010900" startTime="2021-02-18T18:04:30.0537595+00:00" endTime="2021-02-18T18:04:30.0548501+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3164200a-93ae-4a3a-b82e-06a4ccaf1805">
+    <UnitTestResult executionId="994b19c4-b892-4af4-8a34-d9ae12f883d3" testId="400450c4-728f-0dce-c668-a78ed895077d" testName="SumOfOddNumbers" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0057490" startTime="2021-02-18T18:32:49.0717001+00:00" endTime="2021-02-18T18:32:49.0774514+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="994b19c4-b892-4af4-8a34-d9ae12f883d3">
+      <Output>
+        <StdOut>Given I have a calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
+And I enter the numbers below into a list&#xD;
+  --- table step argument ---&#xD;
+  | numbers |&#xD;
+  | 1       |&#xD;
+  | 2       |&#xD;
+  | 3       |&#xD;
+  | 4       |&#xD;
+  | 5       |&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterTheNumbersBelowIntoAList(&lt;table&gt;) (0.0s)&#xD;
+When I iterate through the list to select all odd numbers&#xD;
+-&gt; done: CalculatorSteps.WhenIIterateThroughTheListToSelectAllOddNumbers() (0.0s)&#xD;
+And I add the selected numbers of the list together&#xD;
+-&gt; done: CalculatorSteps.WhenIAddTheSelectedNumbersOfTheListTogether() (0.0s)&#xD;
+Then the result should be equal to 9&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(9) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b10427b2-9c42-4ec8-91e4-ed6522d706a3" testId="8ec8ea03-78f5-004b-7e30-18c3ba70d79b" testName="SquareRoot(&quot;0&quot;,&quot;0&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0104700" startTime="2021-02-18T18:32:49.0157618+00:00" endTime="2021-02-18T18:32:49.0262317+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b10427b2-9c42-4ec8-91e4-ed6522d706a3">
+      <Output>
+        <StdOut>Given I have a calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
+And I enter a first input number that is zero or positive 0 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberThatIsZeroOrPositiveIntoTheCalculator(0) (0.0s)&#xD;
+When I press squareroot&#xD;
+-&gt; done: CalculatorSteps.WhenIPressSquareRoot() (0.0s)&#xD;
+Then the result should be equal to 0&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(0) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0954eb91-771e-4e8a-86a8-cd2b43b2daa3" testId="f896a2e1-42f4-0d6d-571b-0029d264c2ea" testName="Modulo(&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0045800" startTime="2021-02-18T18:32:48.9829991+00:00" endTime="2021-02-18T18:32:48.9875796+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0954eb91-771e-4e8a-86a8-cd2b43b2daa3">
       <Output>
         <StdOut>Given I have a calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
@@ -313,7 +265,21 @@ Then the result should be equal to 0&#xD;
 -&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(0) (0.0s)</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="0b1a5dbd-02d2-4f82-95fe-666b9c07eff3" testId="215496cb-a941-ed56-3a93-7d73b1cfdfdf" testName="Multiply(&quot;1&quot;,&quot;-1&quot;,&quot;-1&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0105470" startTime="2021-02-18T18:04:30.0577437+00:00" endTime="2021-02-18T18:04:30.0682919+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0b1a5dbd-02d2-4f82-95fe-666b9c07eff3">
+    <UnitTestResult executionId="fe92da65-e5c8-42f1-bddc-656bb821484e" testId="9534263a-6863-096c-e037-58664b60eb28" testName="Multiply(&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0011120" startTime="2021-02-18T18:32:49.0028672+00:00" endTime="2021-02-18T18:32:49.0039793+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fe92da65-e5c8-42f1-bddc-656bb821484e">
+      <Output>
+        <StdOut>Given I have a calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
+And I enter any first input number 1 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(1) (0.0s)&#xD;
+And I enter any second input number 1 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnySecondInputNumberIntoTheCalculator(1) (0.0s)&#xD;
+When I press multiply&#xD;
+-&gt; done: CalculatorSteps.WhenIPressMultiply() (0.0s)&#xD;
+Then the result should be equal to 1&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(1) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="775150e7-dceb-4230-a8aa-407779754561" testId="215496cb-a941-ed56-3a93-7d73b1cfdfdf" testName="Multiply(&quot;1&quot;,&quot;-1&quot;,&quot;-1&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0036600" startTime="2021-02-18T18:32:48.9932418+00:00" endTime="2021-02-18T18:32:48.9969031+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="775150e7-dceb-4230-a8aa-407779754561">
       <Output>
         <StdOut>Given I have a calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
@@ -327,7 +293,45 @@ Then the result should be equal to -1&#xD;
 -&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(-1) (0.0s)</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="d73482bf-62a9-451a-ad4d-9d65f0f92a81" testId="c607082f-2e0d-fdc0-2cca-b08501d51d86" testName="Divide(&quot;1&quot;,&quot;-1&quot;,&quot;-1&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0060089" startTime="2021-02-18T18:04:29.9302084+00:00" endTime="2021-02-18T18:04:29.9362184+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d73482bf-62a9-451a-ad4d-9d65f0f92a81">
+    <UnitTestResult executionId="a7966797-3a37-473a-bdb1-371630562beb" testId="72676448-bc79-37f4-6294-5f9a97698e55" testName="SquareRoot(&quot;1&quot;,&quot;1&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0010349" startTime="2021-02-18T18:32:49.0262644+00:00" endTime="2021-02-18T18:32:49.0272995+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7966797-3a37-473a-bdb1-371630562beb">
+      <Output>
+        <StdOut>Given I have a calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
+And I enter a first input number that is zero or positive 1 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberThatIsZeroOrPositiveIntoTheCalculator(1) (0.0s)&#xD;
+When I press squareroot&#xD;
+-&gt; done: CalculatorSteps.WhenIPressSquareRoot() (0.0s)&#xD;
+Then the result should be equal to 1&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(1) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="94a5fae0-3ad4-46ec-9fe3-9c8c27cc3530" testId="f2498993-9900-0c54-7e60-a9dc56124816" testName="DivideCannotDivideByZeroErrorMessage" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0297260" startTime="2021-02-18T18:32:48.9344661+00:00" endTime="2021-02-18T18:32:48.9641945+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="94a5fae0-3ad4-46ec-9fe3-9c8c27cc3530">
+      <Output>
+        <StdOut>Given I have a calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
+And I enter a second input number of zero into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterASecondInputNumberOfZeroIntoTheCalculator() (0.0s)&#xD;
+When I press divide&#xD;
+-&gt; done: CalculatorSteps.WhenIPressDivide() (0.0s)&#xD;
+Then the result should display a division error message&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldDisplayADivisionErrorMessage() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f5f1b65d-c67c-4194-b88c-ca12fb6928e4" testId="2c1ee02f-af88-72f0-7e8a-6b1654cb7772" testName="Exponent(&quot;1&quot;,&quot;2&quot;,&quot;1&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0067100" startTime="2021-02-18T18:32:48.9678709+00:00" endTime="2021-02-18T18:32:48.9745813+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f5f1b65d-c67c-4194-b88c-ca12fb6928e4">
+      <Output>
+        <StdOut>Given I have a calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
+And I enter any first input number 1 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(1) (0.0s)&#xD;
+And I enter any second input number 2 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnySecondInputNumberIntoTheCalculator(2) (0.0s)&#xD;
+When I press exponent&#xD;
+-&gt; done: CalculatorSteps.WhenIPressExponent() (0.0s)&#xD;
+Then the result should be equal to 1&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(1) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="662a011b-a2ab-4dc9-a3e5-0b82ba8d6969" testId="c607082f-2e0d-fdc0-2cca-b08501d51d86" testName="Divide(&quot;1&quot;,&quot;-1&quot;,&quot;-1&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0061060" startTime="2021-02-18T18:32:48.9246578+00:00" endTime="2021-02-18T18:32:48.9307675+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="662a011b-a2ab-4dc9-a3e5-0b82ba8d6969">
       <Output>
         <StdOut>Given I have a calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
@@ -341,31 +345,47 @@ Then the result should be equal to -1&#xD;
 -&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(-1) (0.0s)</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="cfe8579f-5349-42d5-b230-6937eb072395" testId="92344ea4-5961-d95f-71e8-11b871745c3d" testName="ReciprocalCannotDivideByZeroErrorResult" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0025730" startTime="2021-02-18T18:04:30.0921532+00:00" endTime="2021-02-18T18:04:30.0947267+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cfe8579f-5349-42d5-b230-6937eb072395">
+    <UnitTestResult executionId="4f322dc3-dd9e-416d-b715-3507f270a35b" testId="040840f3-64e3-6510-ad4d-6667ac473118" testName="Exponent(&quot;2&quot;,&quot;2&quot;,&quot;4&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0016430" startTime="2021-02-18T18:32:48.9746453+00:00" endTime="2021-02-18T18:32:48.9762878+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4f322dc3-dd9e-416d-b715-3507f270a35b">
       <Output>
         <StdOut>Given I have a calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter a first input number of zero into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberOfZeroIntoTheCalculator() (0.0s)&#xD;
-When I press reciprocal&#xD;
--&gt; done: CalculatorSteps.WhenIPressReciprocal() (0.0s)&#xD;
+And I enter any first input number 2 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(2) (0.0s)&#xD;
+And I enter any second input number 2 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnySecondInputNumberIntoTheCalculator(2) (0.0s)&#xD;
+When I press exponent&#xD;
+-&gt; done: CalculatorSteps.WhenIPressExponent() (0.0s)&#xD;
+Then the result should be equal to 4&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(4) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fc3bce6c-d11a-4b37-8275-e42dfaff7d7a" testId="fe5077e0-126f-c2bd-6137-b3ac7ca08be7" testName="Addition(&quot;1&quot;,&quot;-1&quot;,&quot;0&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0965010" startTime="2021-02-18T18:32:48.8053554+00:00" endTime="2021-02-18T18:32:48.9016482+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fc3bce6c-d11a-4b37-8275-e42dfaff7d7a">
+      <Output>
+        <StdOut>Given I have a calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
+And I enter any first input number 1 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(1) (0.0s)&#xD;
+And I enter any second input number -1 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnySecondInputNumberIntoTheCalculator(-1) (0.0s)&#xD;
+When I press add&#xD;
+-&gt; done: CalculatorSteps.WhenIPressAdd() (0.0s)&#xD;
+Then the result should be equal to 0&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(0) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2aa20826-148f-4584-8293-eaf59c293107" testId="46840a2b-3056-4c41-53b0-9e8824a2f15f" testName="ModuloCannotDivideByZeroErrorResult" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0026140" startTime="2021-02-18T18:32:48.9901120+00:00" endTime="2021-02-18T18:32:48.9927264+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2aa20826-148f-4584-8293-eaf59c293107">
+      <Output>
+        <StdOut>Given I have a calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
+And I enter a second input number of zero into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterASecondInputNumberOfZeroIntoTheCalculator() (0.0s)&#xD;
+When I press modulo&#xD;
+-&gt; done: CalculatorSteps.WhenIPressModulo() (0.0s)&#xD;
 Then the result should not display a valid number&#xD;
 -&gt; done: CalculatorSteps.ThenTheResultShouldNotDisplayAValidNumber() (0.0s)</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="92e6ce67-5253-49bb-9e09-b98bcedf1b90" testId="c61881e7-54b5-62a2-7b25-4de579ad179c" testName="ReciprocalCannotDivideByZeroErrorMessage" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0036490" startTime="2021-02-18T18:04:30.0884601+00:00" endTime="2021-02-18T18:04:30.0921093+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="92e6ce67-5253-49bb-9e09-b98bcedf1b90">
-      <Output>
-        <StdOut>Given I have a calculator&#xD;
--&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter a first input number of zero into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberOfZeroIntoTheCalculator() (0.0s)&#xD;
-When I press reciprocal&#xD;
--&gt; done: CalculatorSteps.WhenIPressReciprocal() (0.0s)&#xD;
-Then the result should display a division error message&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldDisplayADivisionErrorMessage() (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="7739d3e1-779e-4b2b-a25b-8e71d59f17d0" testId="8f65ac51-ca70-9747-1c08-a9e37612f1e7" testName="SquareRootCannotAcceptNegativeNumbersErrorResult" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0028420" startTime="2021-02-18T18:04:30.1303246+00:00" endTime="2021-02-18T18:04:30.1331692+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7739d3e1-779e-4b2b-a25b-8e71d59f17d0">
+    <UnitTestResult executionId="34071759-384d-4fed-a64a-f4c9c285a6b6" testId="b39dcce1-bcbe-8990-4f3e-0cb9f34f5b69" testName="SquareRootCannotAcceptNegativeNumbersErrorMessage" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0052630" startTime="2021-02-18T18:32:49.0283988+00:00" endTime="2021-02-18T18:32:49.0336616+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34071759-384d-4fed-a64a-f4c9c285a6b6">
       <Output>
         <StdOut>Given I have a calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
@@ -373,23 +393,39 @@ And I enter a first input number that is negative -1 into the calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberThatIsNegativeIntoTheCalculator(-1) (0.0s)&#xD;
 When I press squareroot&#xD;
 -&gt; done: CalculatorSteps.WhenIPressSquareRoot() (0.0s)&#xD;
-Then the result should not display a valid number&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldNotDisplayAValidNumber() (0.0s)</StdOut>
+Then the result should display an argument error message&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldDisplayAnArgumentErrorMessage() (0.0s)</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="c1497c33-21d7-402a-9737-afc0856555ea" testId="8ec8ea03-78f5-004b-7e30-18c3ba70d79b" testName="SquareRoot(&quot;0&quot;,&quot;0&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0208260" startTime="2021-02-18T18:04:30.0954663+00:00" endTime="2021-02-18T18:04:30.1162959+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c1497c33-21d7-402a-9737-afc0856555ea">
+    <UnitTestResult executionId="9975739a-84f2-446a-be59-6f7a203e27fc" testId="e8464b1f-5030-550a-4e99-a581ef53168c" testName="Addition(&quot;1&quot;,&quot;0&quot;,&quot;1&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0101900" startTime="2021-02-18T18:32:48.9055045+00:00" endTime="2021-02-18T18:32:48.9156940+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9975739a-84f2-446a-be59-6f7a203e27fc">
       <Output>
         <StdOut>Given I have a calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter a first input number that is zero or positive 0 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberThatIsZeroOrPositiveIntoTheCalculator(0) (0.0s)&#xD;
-When I press squareroot&#xD;
--&gt; done: CalculatorSteps.WhenIPressSquareRoot() (0.0s)&#xD;
+And I enter any first input number 1 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(1) (0.0s)&#xD;
+And I enter any second input number 0 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnySecondInputNumberIntoTheCalculator(0) (0.0s)&#xD;
+When I press add&#xD;
+-&gt; done: CalculatorSteps.WhenIPressAdd() (0.0s)&#xD;
+Then the result should be equal to 1&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(1) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fdee639e-cf36-428b-b097-b9de4f56033e" testId="7cfd5c20-858c-e729-9033-897264157505" testName="Subtract(&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0008530" startTime="2021-02-18T18:32:49.0407014+00:00" endTime="2021-02-18T18:32:49.0415556+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fdee639e-cf36-428b-b097-b9de4f56033e">
+      <Output>
+        <StdOut>Given I have a calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
+And I enter any first input number 1 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnyFirstInputNumberIntoTheCalculator(1) (0.0s)&#xD;
+And I enter any second input number 1 into the calculator&#xD;
+-&gt; done: CalculatorSteps.GivenIEnterAnySecondInputNumberIntoTheCalculator(1) (0.0s)&#xD;
+When I press subtract&#xD;
+-&gt; done: CalculatorSteps.WhenIPressSubtract() (0.0s)&#xD;
 Then the result should be equal to 0&#xD;
 -&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(0) (0.0s)</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="4f9746e7-d507-4646-b85c-f77f27814f47" testId="b0c7be46-824d-da49-483c-e7e655aa0e8f" testName="Subtract(&quot;1&quot;,&quot;-1&quot;,&quot;2&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0035700" startTime="2021-02-18T18:04:30.1348283+00:00" endTime="2021-02-18T18:04:30.1384001+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4f9746e7-d507-4646-b85c-f77f27814f47">
+    <UnitTestResult executionId="2cc83e30-cd4b-4fd0-a711-50c4d01e393a" testId="b0c7be46-824d-da49-483c-e7e655aa0e8f" testName="Subtract(&quot;1&quot;,&quot;-1&quot;,&quot;2&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0034280" startTime="2021-02-18T18:32:49.0357582+00:00" endTime="2021-02-18T18:32:49.0391864+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2cc83e30-cd4b-4fd0-a711-50c4d01e393a">
       <Output>
         <StdOut>Given I have a calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
@@ -403,206 +439,170 @@ Then the result should be equal to 2&#xD;
 -&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(2) (0.0s)</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="1ac37070-af58-4776-8b6b-eba3b5b785fc" testId="b39dcce1-bcbe-8990-4f3e-0cb9f34f5b69" testName="SquareRootCannotAcceptNegativeNumbersErrorMessage" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0086930" startTime="2021-02-18T18:04:30.1182666+00:00" endTime="2021-02-18T18:04:30.1269599+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1ac37070-af58-4776-8b6b-eba3b5b785fc">
-      <Output>
-        <StdOut>Given I have a calculator&#xD;
--&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter a first input number that is negative -1 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberThatIsNegativeIntoTheCalculator(-1) (0.0s)&#xD;
-When I press squareroot&#xD;
--&gt; done: CalculatorSteps.WhenIPressSquareRoot() (0.0s)&#xD;
-Then the result should display an argument error message&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldDisplayAnArgumentErrorMessage() (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="21653cd2-9010-46d4-9a65-9b335c7e9e43" testId="f2498993-9900-0c54-7e60-a9dc56124816" testName="DivideCannotDivideByZeroErrorMessage" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0879190" startTime="2021-02-18T18:04:29.9422968+00:00" endTime="2021-02-18T18:04:30.0302323+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="21653cd2-9010-46d4-9a65-9b335c7e9e43">
-      <Output>
-        <StdOut>Given I have a calculator&#xD;
--&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter a second input number of zero into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterASecondInputNumberOfZeroIntoTheCalculator() (0.0s)&#xD;
-When I press divide&#xD;
--&gt; done: CalculatorSteps.WhenIPressDivide() (0.0s)&#xD;
-Then the result should display a division error message&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldDisplayADivisionErrorMessage() (0.1s)</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="f9e59023-9741-42ab-ac80-623520d57dd5" testId="22988a10-e856-1642-1e88-9b91939c24b8" testName="Reciprocal(&quot;2&quot;,&quot;0.5&quot;,null)" computerName="DESKTOP-H5CMDB4" duration="00:00:00.0010830" startTime="2021-02-18T18:04:30.0857569+00:00" endTime="2021-02-18T18:04:30.0868401+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f9e59023-9741-42ab-ac80-623520d57dd5">
-      <Output>
-        <StdOut>Given I have a calculator&#xD;
--&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
-And I enter a first input number that is not zero 2 into the calculator&#xD;
--&gt; done: CalculatorSteps.GivenIEnterAFirstInputNumberThatIsNotZeroIntoTheCalculator(2) (0.0s)&#xD;
-When I press reciprocal&#xD;
--&gt; done: CalculatorSteps.WhenIPressReciprocal() (0.0s)&#xD;
-Then the result should be equal to 0.5&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldBeEqualTo(0.5) (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
   </Results>
   <TestDefinitions>
-    <UnitTest name="ReciprocalCannotDivideByZeroErrorResult" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="92344ea4-5961-d95f-71e8-11b871745c3d">
-      <Execution id="cfe8579f-5349-42d5-b230-6937eb072395" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="ReciprocalCannotDivideByZeroErrorResult" />
+    <UnitTest name="ReciprocalCannotDivideByZeroErrorResult" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="92344ea4-5961-d95f-71e8-11b871745c3d">
+      <Execution id="74871e4c-f10a-4bda-aecc-7840a9c2f1c7" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="ReciprocalCannotDivideByZeroErrorResult" />
     </UnitTest>
-    <UnitTest name="Reciprocal(&quot;2&quot;,&quot;0.5&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="22988a10-e856-1642-1e88-9b91939c24b8">
-      <Execution id="f9e59023-9741-42ab-ac80-623520d57dd5" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Reciprocal(&quot;2&quot;,&quot;0.5&quot;,null)" />
+    <UnitTest name="Reciprocal(&quot;2&quot;,&quot;0.5&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="22988a10-e856-1642-1e88-9b91939c24b8">
+      <Execution id="31352bdb-1a89-4b2e-aaa4-8dbc49d9681a" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Reciprocal(&quot;2&quot;,&quot;0.5&quot;,null)" />
     </UnitTest>
-    <UnitTest name="Reciprocal(&quot;1&quot;,&quot;1&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="21d08c16-5534-10b8-5f67-dd9f90a337c8">
-      <Execution id="d0bca424-9eee-4559-b350-4181833534a2" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Reciprocal(&quot;1&quot;,&quot;1&quot;,null)" />
+    <UnitTest name="Reciprocal(&quot;1&quot;,&quot;1&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="21d08c16-5534-10b8-5f67-dd9f90a337c8">
+      <Execution id="4d790e0d-8646-472a-97e4-d1d4971fbda6" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Reciprocal(&quot;1&quot;,&quot;1&quot;,null)" />
     </UnitTest>
-    <UnitTest name="Exponent(&quot;2&quot;,&quot;2&quot;,&quot;4&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="040840f3-64e3-6510-ad4d-6667ac473118">
-      <Execution id="7d6754d8-3791-4ecc-ae86-81dd044260c7" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Exponent(&quot;2&quot;,&quot;2&quot;,&quot;4&quot;,null)" />
+    <UnitTest name="Exponent(&quot;2&quot;,&quot;2&quot;,&quot;4&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="040840f3-64e3-6510-ad4d-6667ac473118">
+      <Execution id="4f322dc3-dd9e-416d-b715-3507f270a35b" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Exponent(&quot;2&quot;,&quot;2&quot;,&quot;4&quot;,null)" />
     </UnitTest>
-    <UnitTest name="SumOfOddNumbers" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="400450c4-728f-0dce-c668-a78ed895077d">
-      <Execution id="9865299b-34a5-46aa-9744-078a883f1582" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="SumOfOddNumbers" />
+    <UnitTest name="SumOfOddNumbers" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="400450c4-728f-0dce-c668-a78ed895077d">
+      <Execution id="994b19c4-b892-4af4-8a34-d9ae12f883d3" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="SumOfOddNumbers" />
     </UnitTest>
-    <UnitTest name="Subtract(&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="7cfd5c20-858c-e729-9033-897264157505">
-      <Execution id="855353c0-d55f-4afa-ad41-c98abbff5190" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Subtract(&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,null)" />
+    <UnitTest name="Subtract(&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="7cfd5c20-858c-e729-9033-897264157505">
+      <Execution id="fdee639e-cf36-428b-b097-b9de4f56033e" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Subtract(&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,null)" />
     </UnitTest>
-    <UnitTest name="Multiply(&quot;1&quot;,&quot;-1&quot;,&quot;-1&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="215496cb-a941-ed56-3a93-7d73b1cfdfdf">
-      <Execution id="0b1a5dbd-02d2-4f82-95fe-666b9c07eff3" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Multiply(&quot;1&quot;,&quot;-1&quot;,&quot;-1&quot;,null)" />
+    <UnitTest name="Multiply(&quot;1&quot;,&quot;-1&quot;,&quot;-1&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="215496cb-a941-ed56-3a93-7d73b1cfdfdf">
+      <Execution id="775150e7-dceb-4230-a8aa-407779754561" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Multiply(&quot;1&quot;,&quot;-1&quot;,&quot;-1&quot;,null)" />
     </UnitTest>
-    <UnitTest name="SumOfEvenNumbers" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="7fa7ff6d-06ff-f1ec-6f50-8360d401f273">
-      <Execution id="6cd73001-6a99-4647-acb4-3e6871347bb2" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="SumOfEvenNumbers" />
+    <UnitTest name="SumOfEvenNumbers" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="7fa7ff6d-06ff-f1ec-6f50-8360d401f273">
+      <Execution id="7a49cdd4-fb6e-4af9-a614-5c9e91350abc" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="SumOfEvenNumbers" />
     </UnitTest>
-    <UnitTest name="SquareRoot(&quot;1&quot;,&quot;1&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="72676448-bc79-37f4-6294-5f9a97698e55">
-      <Execution id="d804adc7-d86c-41bb-a522-920c21f4e8e5" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="SquareRoot(&quot;1&quot;,&quot;1&quot;,null)" />
+    <UnitTest name="SquareRoot(&quot;1&quot;,&quot;1&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="72676448-bc79-37f4-6294-5f9a97698e55">
+      <Execution id="a7966797-3a37-473a-bdb1-371630562beb" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="SquareRoot(&quot;1&quot;,&quot;1&quot;,null)" />
     </UnitTest>
-    <UnitTest name="Divide(&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="442f9e90-9cfa-a2e5-50dd-d769707fe93d">
-      <Execution id="d1fe89d0-9df3-4331-a84f-0eb1875af80d" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Divide(&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,null)" />
+    <UnitTest name="Divide(&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="442f9e90-9cfa-a2e5-50dd-d769707fe93d">
+      <Execution id="6b0f3cec-7803-4840-9123-f87de6e69176" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Divide(&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,null)" />
     </UnitTest>
-    <UnitTest name="Multiply(&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="9534263a-6863-096c-e037-58664b60eb28">
-      <Execution id="a95556b6-c7ac-4d04-bd67-aacfa2dd332b" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Multiply(&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,null)" />
+    <UnitTest name="Multiply(&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="9534263a-6863-096c-e037-58664b60eb28">
+      <Execution id="fe92da65-e5c8-42f1-bddc-656bb821484e" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Multiply(&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,null)" />
     </UnitTest>
-    <UnitTest name="Reciprocal(&quot;-2&quot;,&quot;-0.5&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="4c05a0d3-a95b-7068-c4e8-d4cb95d820c0">
-      <Execution id="58e4cc97-ba47-486b-8feb-329f8d148655" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Reciprocal(&quot;-2&quot;,&quot;-0.5&quot;,null)" />
+    <UnitTest name="Reciprocal(&quot;-2&quot;,&quot;-0.5&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="4c05a0d3-a95b-7068-c4e8-d4cb95d820c0">
+      <Execution id="c9d4c35d-15ef-4e86-a2aa-c20edb31f1bf" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Reciprocal(&quot;-2&quot;,&quot;-0.5&quot;,null)" />
     </UnitTest>
-    <UnitTest name="DivideCannotDivideByZeroErrorResult" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="ee8915fd-2ccd-8ea4-f544-b3d01c1efe0c">
-      <Execution id="74255f41-2923-43e1-8c30-f6916d204576" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="DivideCannotDivideByZeroErrorResult" />
+    <UnitTest name="DivideCannotDivideByZeroErrorResult" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="ee8915fd-2ccd-8ea4-f544-b3d01c1efe0c">
+      <Execution id="b582152c-2d2d-4320-872d-635fc11d6004" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="DivideCannotDivideByZeroErrorResult" />
     </UnitTest>
-    <UnitTest name="ReciprocalCannotDivideByZeroErrorMessage" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="c61881e7-54b5-62a2-7b25-4de579ad179c">
-      <Execution id="92e6ce67-5253-49bb-9e09-b98bcedf1b90" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="ReciprocalCannotDivideByZeroErrorMessage" />
+    <UnitTest name="ReciprocalCannotDivideByZeroErrorMessage" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="c61881e7-54b5-62a2-7b25-4de579ad179c">
+      <Execution id="1fb209d7-0794-4a6d-9cf8-4769f4b85b0a" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="ReciprocalCannotDivideByZeroErrorMessage" />
     </UnitTest>
-    <UnitTest name="Modulo(&quot;1&quot;,&quot;-1&quot;,&quot;0&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="62ab0eaa-6414-8603-c9ae-47ab61766269">
-      <Execution id="a6df08c1-1382-47d9-8e7e-d9d3aa2b6e82" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Modulo(&quot;1&quot;,&quot;-1&quot;,&quot;0&quot;,null)" />
+    <UnitTest name="Modulo(&quot;1&quot;,&quot;-1&quot;,&quot;0&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="62ab0eaa-6414-8603-c9ae-47ab61766269">
+      <Execution id="1d5c7a50-83a9-4a43-aa6d-a71fd05e8ee5" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Modulo(&quot;1&quot;,&quot;-1&quot;,&quot;0&quot;,null)" />
     </UnitTest>
-    <UnitTest name="SquareRoot(&quot;0&quot;,&quot;0&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="8ec8ea03-78f5-004b-7e30-18c3ba70d79b">
-      <Execution id="c1497c33-21d7-402a-9737-afc0856555ea" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="SquareRoot(&quot;0&quot;,&quot;0&quot;,null)" />
+    <UnitTest name="SquareRoot(&quot;0&quot;,&quot;0&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="8ec8ea03-78f5-004b-7e30-18c3ba70d79b">
+      <Execution id="b10427b2-9c42-4ec8-91e4-ed6522d706a3" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="SquareRoot(&quot;0&quot;,&quot;0&quot;,null)" />
     </UnitTest>
-    <UnitTest name="Modulo(&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="f896a2e1-42f4-0d6d-571b-0029d264c2ea">
-      <Execution id="3164200a-93ae-4a3a-b82e-06a4ccaf1805" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Modulo(&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,null)" />
+    <UnitTest name="Modulo(&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="f896a2e1-42f4-0d6d-571b-0029d264c2ea">
+      <Execution id="0954eb91-771e-4e8a-86a8-cd2b43b2daa3" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Modulo(&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,null)" />
     </UnitTest>
-    <UnitTest name="Multiply(&quot;1&quot;,&quot;0&quot;,&quot;0&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="8a46b8cf-27be-9d96-7d1e-1be25f7a648d">
-      <Execution id="2467fd06-d19d-4723-8f59-62782d5b8f65" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Multiply(&quot;1&quot;,&quot;0&quot;,&quot;0&quot;,null)" />
+    <UnitTest name="Multiply(&quot;1&quot;,&quot;0&quot;,&quot;0&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="8a46b8cf-27be-9d96-7d1e-1be25f7a648d">
+      <Execution id="7d20540c-ba32-42eb-bd2f-ac57ee2a688e" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Multiply(&quot;1&quot;,&quot;0&quot;,&quot;0&quot;,null)" />
     </UnitTest>
-    <UnitTest name="Subtract(&quot;1&quot;,&quot;0&quot;,&quot;1&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="060cbaea-1998-eabc-c46c-4fda9b3a957a">
-      <Execution id="ac69fbdf-d259-478c-bedc-08292c32c7d6" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Subtract(&quot;1&quot;,&quot;0&quot;,&quot;1&quot;,null)" />
+    <UnitTest name="Subtract(&quot;1&quot;,&quot;0&quot;,&quot;1&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="060cbaea-1998-eabc-c46c-4fda9b3a957a">
+      <Execution id="82e2b558-9a84-43fb-a4d5-8d31d6a866d2" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Subtract(&quot;1&quot;,&quot;0&quot;,&quot;1&quot;,null)" />
     </UnitTest>
-    <UnitTest name="Addition(&quot;1&quot;,&quot;-1&quot;,&quot;0&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="fe5077e0-126f-c2bd-6137-b3ac7ca08be7">
-      <Execution id="3408ecc0-2a67-4dcc-ac25-b6629199e413" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Addition(&quot;1&quot;,&quot;-1&quot;,&quot;0&quot;,null)" />
+    <UnitTest name="Addition(&quot;1&quot;,&quot;-1&quot;,&quot;0&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="fe5077e0-126f-c2bd-6137-b3ac7ca08be7">
+      <Execution id="fc3bce6c-d11a-4b37-8275-e42dfaff7d7a" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Addition(&quot;1&quot;,&quot;-1&quot;,&quot;0&quot;,null)" />
     </UnitTest>
-    <UnitTest name="Divide(&quot;1&quot;,&quot;-1&quot;,&quot;-1&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="c607082f-2e0d-fdc0-2cca-b08501d51d86">
-      <Execution id="d73482bf-62a9-451a-ad4d-9d65f0f92a81" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Divide(&quot;1&quot;,&quot;-1&quot;,&quot;-1&quot;,null)" />
+    <UnitTest name="Divide(&quot;1&quot;,&quot;-1&quot;,&quot;-1&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="c607082f-2e0d-fdc0-2cca-b08501d51d86">
+      <Execution id="662a011b-a2ab-4dc9-a3e5-0b82ba8d6969" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Divide(&quot;1&quot;,&quot;-1&quot;,&quot;-1&quot;,null)" />
     </UnitTest>
-    <UnitTest name="Exponent(&quot;3&quot;,&quot;2&quot;,&quot;9&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="3607f840-cc88-60c2-2ed9-342799ae2877">
-      <Execution id="82601f8b-824c-45e1-9092-e969b1b25660" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Exponent(&quot;3&quot;,&quot;2&quot;,&quot;9&quot;,null)" />
+    <UnitTest name="Exponent(&quot;3&quot;,&quot;2&quot;,&quot;9&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="3607f840-cc88-60c2-2ed9-342799ae2877">
+      <Execution id="d9fdb8af-6386-4e1a-8122-2813117442f2" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Exponent(&quot;3&quot;,&quot;2&quot;,&quot;9&quot;,null)" />
     </UnitTest>
-    <UnitTest name="Addition(&quot;1&quot;,&quot;1&quot;,&quot;2&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="76491693-85ab-5100-3aa0-a17b845f460a">
-      <Execution id="b7770ba4-f6a7-42ee-8250-298d9637272e" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Addition(&quot;1&quot;,&quot;1&quot;,&quot;2&quot;,null)" />
+    <UnitTest name="Addition(&quot;1&quot;,&quot;1&quot;,&quot;2&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="76491693-85ab-5100-3aa0-a17b845f460a">
+      <Execution id="95ed467a-5ed9-496c-8ad7-b6f8720eccf2" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Addition(&quot;1&quot;,&quot;1&quot;,&quot;2&quot;,null)" />
     </UnitTest>
-    <UnitTest name="DivideCannotDivideByZeroErrorMessage" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="f2498993-9900-0c54-7e60-a9dc56124816">
-      <Execution id="21653cd2-9010-46d4-9a65-9b335c7e9e43" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="DivideCannotDivideByZeroErrorMessage" />
+    <UnitTest name="DivideCannotDivideByZeroErrorMessage" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="f2498993-9900-0c54-7e60-a9dc56124816">
+      <Execution id="94a5fae0-3ad4-46ec-9fe3-9c8c27cc3530" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="DivideCannotDivideByZeroErrorMessage" />
     </UnitTest>
-    <UnitTest name="Addition(&quot;1&quot;,&quot;0&quot;,&quot;1&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="e8464b1f-5030-550a-4e99-a581ef53168c">
-      <Execution id="1f856b2f-f935-4e39-acf2-6643b877a530" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Addition(&quot;1&quot;,&quot;0&quot;,&quot;1&quot;,null)" />
+    <UnitTest name="Addition(&quot;1&quot;,&quot;0&quot;,&quot;1&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="e8464b1f-5030-550a-4e99-a581ef53168c">
+      <Execution id="9975739a-84f2-446a-be59-6f7a203e27fc" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Addition(&quot;1&quot;,&quot;0&quot;,&quot;1&quot;,null)" />
     </UnitTest>
-    <UnitTest name="SquareRootCannotAcceptNegativeNumbersErrorMessage" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="b39dcce1-bcbe-8990-4f3e-0cb9f34f5b69">
-      <Execution id="1ac37070-af58-4776-8b6b-eba3b5b785fc" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="SquareRootCannotAcceptNegativeNumbersErrorMessage" />
+    <UnitTest name="SquareRootCannotAcceptNegativeNumbersErrorMessage" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="b39dcce1-bcbe-8990-4f3e-0cb9f34f5b69">
+      <Execution id="34071759-384d-4fed-a64a-f4c9c285a6b6" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="SquareRootCannotAcceptNegativeNumbersErrorMessage" />
     </UnitTest>
-    <UnitTest name="ModuloCannotDivideByZeroErrorResult" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="46840a2b-3056-4c41-53b0-9e8824a2f15f">
-      <Execution id="50c90960-c261-4833-80b8-a633960bf0dd" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="ModuloCannotDivideByZeroErrorResult" />
+    <UnitTest name="ModuloCannotDivideByZeroErrorResult" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="46840a2b-3056-4c41-53b0-9e8824a2f15f">
+      <Execution id="2aa20826-148f-4584-8293-eaf59c293107" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="ModuloCannotDivideByZeroErrorResult" />
     </UnitTest>
-    <UnitTest name="Exponent(&quot;1&quot;,&quot;2&quot;,&quot;1&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="2c1ee02f-af88-72f0-7e8a-6b1654cb7772">
-      <Execution id="0786a28e-7cbc-40ff-b479-ec6662fa2ad9" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Exponent(&quot;1&quot;,&quot;2&quot;,&quot;1&quot;,null)" />
+    <UnitTest name="Exponent(&quot;1&quot;,&quot;2&quot;,&quot;1&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="2c1ee02f-af88-72f0-7e8a-6b1654cb7772">
+      <Execution id="f5f1b65d-c67c-4194-b88c-ca12fb6928e4" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Exponent(&quot;1&quot;,&quot;2&quot;,&quot;1&quot;,null)" />
     </UnitTest>
-    <UnitTest name="Subtract(&quot;1&quot;,&quot;-1&quot;,&quot;2&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="b0c7be46-824d-da49-483c-e7e655aa0e8f">
-      <Execution id="4f9746e7-d507-4646-b85c-f77f27814f47" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Subtract(&quot;1&quot;,&quot;-1&quot;,&quot;2&quot;,null)" />
+    <UnitTest name="Subtract(&quot;1&quot;,&quot;-1&quot;,&quot;2&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="b0c7be46-824d-da49-483c-e7e655aa0e8f">
+      <Execution id="2cc83e30-cd4b-4fd0-a711-50c4d01e393a" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="Subtract(&quot;1&quot;,&quot;-1&quot;,&quot;2&quot;,null)" />
     </UnitTest>
-    <UnitTest name="SquareRoot(&quot;9&quot;,&quot;3&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="1a57df16-ef7e-11ef-2db6-604506c8df14">
-      <Execution id="c3546e7f-4246-4ce8-ac9f-82531d3d8c1f" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="SquareRoot(&quot;9&quot;,&quot;3&quot;,null)" />
+    <UnitTest name="SquareRoot(&quot;9&quot;,&quot;3&quot;,null)" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="1a57df16-ef7e-11ef-2db6-604506c8df14">
+      <Execution id="4d6eac5f-e0cf-4eef-97bc-1022e0fe0f8f" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="SquareRoot(&quot;9&quot;,&quot;3&quot;,null)" />
     </UnitTest>
-    <UnitTest name="ModuloCannotDivideByZeroErrorMessage" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="3b33a3ff-ef38-238b-529b-a6d1cc8c85c4">
-      <Execution id="9bb5e450-c9c6-49e4-ad75-53527ecbfb57" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="ModuloCannotDivideByZeroErrorMessage" />
+    <UnitTest name="ModuloCannotDivideByZeroErrorMessage" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="3b33a3ff-ef38-238b-529b-a6d1cc8c85c4">
+      <Execution id="a654175a-92ae-4c44-9776-8a49ced3190c" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="ModuloCannotDivideByZeroErrorMessage" />
     </UnitTest>
-    <UnitTest name="SquareRootCannotAcceptNegativeNumbersErrorResult" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculator\bin\debug\netcoreapp3.1\bddcalculator.dll" id="8f65ac51-ca70-9747-1c08-a9e37612f1e7">
-      <Execution id="7739d3e1-779e-4b2b-a25b-8e71d59f17d0" />
-      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="SquareRootCannotAcceptNegativeNumbersErrorResult" />
+    <UnitTest name="SquareRootCannotAcceptNegativeNumbersErrorResult" storage="c:\users\zair\documents\employment\spartaglobal\projects\bdd-calculator\bddcalculator\bddcalculatortests\bin\debug\netcoreapp3.1\bddcalculator.dll" id="8f65ac51-ca70-9747-1c08-a9e37612f1e7">
+      <Execution id="79272256-e7da-4a1a-b402-fc6014eb4573" />
+      <TestMethod codeBase="C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll" adapterTypeName="executor://nunit3testexecutor/" className="BDDCalculator.CalculatorFeature" name="SquareRootCannotAcceptNegativeNumbersErrorResult" />
     </UnitTest>
   </TestDefinitions>
   <TestEntries>
-    <TestEntry testId="62ab0eaa-6414-8603-c9ae-47ab61766269" executionId="a6df08c1-1382-47d9-8e7e-d9d3aa2b6e82" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="3b33a3ff-ef38-238b-529b-a6d1cc8c85c4" executionId="9bb5e450-c9c6-49e4-ad75-53527ecbfb57" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="7cfd5c20-858c-e729-9033-897264157505" executionId="855353c0-d55f-4afa-ad41-c98abbff5190" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="040840f3-64e3-6510-ad4d-6667ac473118" executionId="7d6754d8-3791-4ecc-ae86-81dd044260c7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="060cbaea-1998-eabc-c46c-4fda9b3a957a" executionId="ac69fbdf-d259-478c-bedc-08292c32c7d6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="442f9e90-9cfa-a2e5-50dd-d769707fe93d" executionId="d1fe89d0-9df3-4331-a84f-0eb1875af80d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="3607f840-cc88-60c2-2ed9-342799ae2877" executionId="82601f8b-824c-45e1-9092-e969b1b25660" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="e8464b1f-5030-550a-4e99-a581ef53168c" executionId="1f856b2f-f935-4e39-acf2-6643b877a530" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="8a46b8cf-27be-9d96-7d1e-1be25f7a648d" executionId="2467fd06-d19d-4723-8f59-62782d5b8f65" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="ee8915fd-2ccd-8ea4-f544-b3d01c1efe0c" executionId="74255f41-2923-43e1-8c30-f6916d204576" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="1a57df16-ef7e-11ef-2db6-604506c8df14" executionId="c3546e7f-4246-4ce8-ac9f-82531d3d8c1f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="400450c4-728f-0dce-c668-a78ed895077d" executionId="9865299b-34a5-46aa-9744-078a883f1582" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="7fa7ff6d-06ff-f1ec-6f50-8360d401f273" executionId="6cd73001-6a99-4647-acb4-3e6871347bb2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="46840a2b-3056-4c41-53b0-9e8824a2f15f" executionId="50c90960-c261-4833-80b8-a633960bf0dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="4c05a0d3-a95b-7068-c4e8-d4cb95d820c0" executionId="58e4cc97-ba47-486b-8feb-329f8d148655" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="9534263a-6863-096c-e037-58664b60eb28" executionId="a95556b6-c7ac-4d04-bd67-aacfa2dd332b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="76491693-85ab-5100-3aa0-a17b845f460a" executionId="b7770ba4-f6a7-42ee-8250-298d9637272e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="72676448-bc79-37f4-6294-5f9a97698e55" executionId="d804adc7-d86c-41bb-a522-920c21f4e8e5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="2c1ee02f-af88-72f0-7e8a-6b1654cb7772" executionId="0786a28e-7cbc-40ff-b479-ec6662fa2ad9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="21d08c16-5534-10b8-5f67-dd9f90a337c8" executionId="d0bca424-9eee-4559-b350-4181833534a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="fe5077e0-126f-c2bd-6137-b3ac7ca08be7" executionId="3408ecc0-2a67-4dcc-ac25-b6629199e413" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="f896a2e1-42f4-0d6d-571b-0029d264c2ea" executionId="3164200a-93ae-4a3a-b82e-06a4ccaf1805" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="215496cb-a941-ed56-3a93-7d73b1cfdfdf" executionId="0b1a5dbd-02d2-4f82-95fe-666b9c07eff3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="c607082f-2e0d-fdc0-2cca-b08501d51d86" executionId="d73482bf-62a9-451a-ad4d-9d65f0f92a81" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="92344ea4-5961-d95f-71e8-11b871745c3d" executionId="cfe8579f-5349-42d5-b230-6937eb072395" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="c61881e7-54b5-62a2-7b25-4de579ad179c" executionId="92e6ce67-5253-49bb-9e09-b98bcedf1b90" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="8f65ac51-ca70-9747-1c08-a9e37612f1e7" executionId="7739d3e1-779e-4b2b-a25b-8e71d59f17d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="8ec8ea03-78f5-004b-7e30-18c3ba70d79b" executionId="c1497c33-21d7-402a-9737-afc0856555ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="b0c7be46-824d-da49-483c-e7e655aa0e8f" executionId="4f9746e7-d507-4646-b85c-f77f27814f47" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="b39dcce1-bcbe-8990-4f3e-0cb9f34f5b69" executionId="1ac37070-af58-4776-8b6b-eba3b5b785fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="f2498993-9900-0c54-7e60-a9dc56124816" executionId="21653cd2-9010-46d4-9a65-9b335c7e9e43" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="22988a10-e856-1642-1e88-9b91939c24b8" executionId="f9e59023-9741-42ab-ac80-623520d57dd5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4c05a0d3-a95b-7068-c4e8-d4cb95d820c0" executionId="c9d4c35d-15ef-4e86-a2aa-c20edb31f1bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="21d08c16-5534-10b8-5f67-dd9f90a337c8" executionId="4d790e0d-8646-472a-97e4-d1d4971fbda6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92344ea4-5961-d95f-71e8-11b871745c3d" executionId="74871e4c-f10a-4bda-aecc-7840a9c2f1c7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c61881e7-54b5-62a2-7b25-4de579ad179c" executionId="1fb209d7-0794-4a6d-9cf8-4769f4b85b0a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ee8915fd-2ccd-8ea4-f544-b3d01c1efe0c" executionId="b582152c-2d2d-4320-872d-635fc11d6004" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7fa7ff6d-06ff-f1ec-6f50-8360d401f273" executionId="7a49cdd4-fb6e-4af9-a614-5c9e91350abc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8a46b8cf-27be-9d96-7d1e-1be25f7a648d" executionId="7d20540c-ba32-42eb-bd2f-ac57ee2a688e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="060cbaea-1998-eabc-c46c-4fda9b3a957a" executionId="82e2b558-9a84-43fb-a4d5-8d31d6a866d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1a57df16-ef7e-11ef-2db6-604506c8df14" executionId="4d6eac5f-e0cf-4eef-97bc-1022e0fe0f8f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f65ac51-ca70-9747-1c08-a9e37612f1e7" executionId="79272256-e7da-4a1a-b402-fc6014eb4573" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22988a10-e856-1642-1e88-9b91939c24b8" executionId="31352bdb-1a89-4b2e-aaa4-8dbc49d9681a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="442f9e90-9cfa-a2e5-50dd-d769707fe93d" executionId="6b0f3cec-7803-4840-9123-f87de6e69176" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3607f840-cc88-60c2-2ed9-342799ae2877" executionId="d9fdb8af-6386-4e1a-8122-2813117442f2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3b33a3ff-ef38-238b-529b-a6d1cc8c85c4" executionId="a654175a-92ae-4c44-9776-8a49ced3190c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="76491693-85ab-5100-3aa0-a17b845f460a" executionId="95ed467a-5ed9-496c-8ad7-b6f8720eccf2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="62ab0eaa-6414-8603-c9ae-47ab61766269" executionId="1d5c7a50-83a9-4a43-aa6d-a71fd05e8ee5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="400450c4-728f-0dce-c668-a78ed895077d" executionId="994b19c4-b892-4af4-8a34-d9ae12f883d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8ec8ea03-78f5-004b-7e30-18c3ba70d79b" executionId="b10427b2-9c42-4ec8-91e4-ed6522d706a3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f896a2e1-42f4-0d6d-571b-0029d264c2ea" executionId="0954eb91-771e-4e8a-86a8-cd2b43b2daa3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9534263a-6863-096c-e037-58664b60eb28" executionId="fe92da65-e5c8-42f1-bddc-656bb821484e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="215496cb-a941-ed56-3a93-7d73b1cfdfdf" executionId="775150e7-dceb-4230-a8aa-407779754561" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="72676448-bc79-37f4-6294-5f9a97698e55" executionId="a7966797-3a37-473a-bdb1-371630562beb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f2498993-9900-0c54-7e60-a9dc56124816" executionId="94a5fae0-3ad4-46ec-9fe3-9c8c27cc3530" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c1ee02f-af88-72f0-7e8a-6b1654cb7772" executionId="f5f1b65d-c67c-4194-b88c-ca12fb6928e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c607082f-2e0d-fdc0-2cca-b08501d51d86" executionId="662a011b-a2ab-4dc9-a3e5-0b82ba8d6969" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="040840f3-64e3-6510-ad4d-6667ac473118" executionId="4f322dc3-dd9e-416d-b715-3507f270a35b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fe5077e0-126f-c2bd-6137-b3ac7ca08be7" executionId="fc3bce6c-d11a-4b37-8275-e42dfaff7d7a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="46840a2b-3056-4c41-53b0-9e8824a2f15f" executionId="2aa20826-148f-4584-8293-eaf59c293107" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b39dcce1-bcbe-8990-4f3e-0cb9f34f5b69" executionId="34071759-384d-4fed-a64a-f4c9c285a6b6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e8464b1f-5030-550a-4e99-a581ef53168c" executionId="9975739a-84f2-446a-be59-6f7a203e27fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7cfd5c20-858c-e729-9033-897264157505" executionId="fdee639e-cf36-428b-b097-b9de4f56033e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0c7be46-824d-da49-483c-e7e655aa0e8f" executionId="2cc83e30-cd4b-4fd0-a711-50c4d01e393a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
   </TestEntries>
   <TestLists>
     <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
@@ -612,7 +612,7 @@ Then the result should be equal to 0.5&#xD;
     <Counters total="32" executed="32" passed="32" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
     <Output>
       <StdOut>NUnit Adapter 3.17.0.0: Test execution started&#xD;
-Running all tests in C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculator\bin\Debug\netcoreapp3.1\BDDCalculator.dll&#xD;
+Running all tests in C:\Users\Zair\Documents\Employment\SpartaGlobal\Projects\BDD-Calculator\BDDCalculator\BDDCalculatorTests\bin\Debug\netcoreapp3.1\BDDCalculator.dll&#xD;
    NUnit3TestExecutor discovered 32 of 32 NUnit test cases&#xD;
 Given I have a calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
@@ -676,7 +676,7 @@ And I enter a second input number of zero into the calculator&#xD;
 When I press divide&#xD;
 -&gt; done: CalculatorSteps.WhenIPressDivide() (0.0s)&#xD;
 Then the result should display a division error message&#xD;
--&gt; done: CalculatorSteps.ThenTheResultShouldDisplayADivisionErrorMessage() (0.1s)&#xD;
+-&gt; done: CalculatorSteps.ThenTheResultShouldDisplayADivisionErrorMessage() (0.0s)&#xD;
 &#xD;
 Given I have a calculator&#xD;
 -&gt; done: CalculatorSteps.GivenIHaveACalculator() (0.0s)&#xD;
