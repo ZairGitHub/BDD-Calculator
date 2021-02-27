@@ -11,8 +11,8 @@ namespace BDDCalculator
         private double _result;
         private Calculator _calculator;
 
-        [Given(@"I have a calculator")]
-        public void GivenIHaveACalculator() => _calculator = new Calculator();
+        [Given(@"a user has a calculator")]
+        public void GivenAUserHasACalculator() => _calculator = new Calculator();
 
         [Given(@"I enter any first input number (.*) into the calculator")]
         public void GivenIEnterAnyFirstInputNumberIntoTheCalculator(double input)

@@ -2,7 +2,7 @@
 	Simple BDD calculator for handling arithmetic operations with one or two input numbers
 
 Background:
-	Given I have a calculator
+	Given a user has a calculator
 
 Scenario Outline: Addition
 	And I enter any first input number <input1> into the calculator
