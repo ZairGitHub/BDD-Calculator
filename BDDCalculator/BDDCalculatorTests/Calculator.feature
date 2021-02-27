@@ -39,7 +39,7 @@ Scenario Outline: Multiply
 
 Scenario Outline: Divide
 	And the user enters any first input number <input1> into the calculator
-	And I enter a second input number that is not zero <input2> into the calculator
+	And the user enters a second input number that is not zero <input2> into the calculator
 	When the user presses divide
 	Then the calculator should display a result should be equal to <result>
 	Examples:
@@ -49,7 +49,7 @@ Scenario Outline: Divide
 	
 Scenario Outline: Modulo
 	And the user enters any first input number <input1> into the calculator
-	And I enter a second input number that is not zero <input2> into the calculator
+	And the user enters a second input number that is not zero <input2> into the calculator
 	When the user presses modulo
 	Then the calculator should display a result should be equal to <result>
 	Examples:

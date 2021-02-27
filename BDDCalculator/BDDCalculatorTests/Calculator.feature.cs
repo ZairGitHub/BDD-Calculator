@@ -278,7 +278,7 @@ this.FeatureBackground();
  testRunner.And(string.Format("the user enters any first input number {0} into the calculator", input1), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 42
- testRunner.And(string.Format("I enter a second input number that is not zero {0} into the calculator", input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And(string.Format("the user enters a second input number that is not zero {0} into the calculator", input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 43
  testRunner.When("the user presses divide", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -329,7 +329,7 @@ this.FeatureBackground();
  testRunner.And(string.Format("the user enters any first input number {0} into the calculator", input1), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 52
- testRunner.And(string.Format("I enter a second input number that is not zero {0} into the calculator", input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And(string.Format("the user enters a second input number that is not zero {0} into the calculator", input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 53
  testRunner.When("the user presses modulo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

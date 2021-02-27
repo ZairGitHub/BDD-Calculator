@@ -56,8 +56,8 @@ namespace BDDCalculator
             _calculator.Input2 = 0;
         }
 
-        [Given(@"I enter a second input number that is not zero (.*) into the calculator")]
-        public void GivenIEnterASecondInputNumberThatIsNotZeroIntoTheCalculator(int input)
+        [Given(@"the user enters a second input number that is not zero (.*) into the calculator")]
+        public void GivenTheUserEntersASecondInputNumberThatIsNotZeroIntoTheCalculator(double input)
         {
             _calculator.Input2 = input;
         }
