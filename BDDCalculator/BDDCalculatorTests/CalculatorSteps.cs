@@ -27,27 +27,21 @@ namespace BDDCalculator
         }
 
         [Given(@"the user enters a first input number that is not zero (.*) into the calculator")]
-        public void GivenTheUserEntersAFirstInputNumberThatIsNotZeroIntoTheCalculator(double input)
+        public void GivenTheUserEntersAFirstInputNumberThatIsNotZeroIntoTheCalculator(double nonZeroInput)
         {
-            _calculator.Input1 = input;
+            _calculator.Input1 = nonZeroInput;
         }
 
         [Given(@"the user enters a first input number that is zero or positive (.*) into the calculator")]
-        public void GivenTheUserEntersAFirstInputNumberThatIsZeroOrPositiveIntoTheCalculator(double input)
+        public void GivenTheUserEntersAFirstInputNumberThatIsZeroOrPositiveIntoTheCalculator(double zeroOrPositiveInput)
         {
-            _calculator.Input1 = input;
+            _calculator.Input1 = zeroOrPositiveInput;
         }
 
         [Given(@"the user enters a first input number that is negative (.*) into the calculator")]
-        public void GivenTheUserEntersAFirstInputNumberThatIsNegativeIntoTheCalculator(double input)
+        public void GivenTheUserEntersAFirstInputNumberThatIsNegativeIntoTheCalculator(double negativeInput)
         {
-            _calculator.Input1 = input;
-        }
-
-        [Given(@"I enter a first input number that is zero or positive (.*) into the calculator")]
-        public void GivenIEnterAFirstInputNumberThatIsZeroOrPositiveIntoTheCalculator(double input)
-        {
-            _calculator.Input1 = input;
+            _calculator.Input1 = negativeInput;
         }
 
         [Given(@"the user enters any second input number (.*) into the calculator")]
@@ -63,9 +57,9 @@ namespace BDDCalculator
         }
 
         [Given(@"the user enters a second input number that is not zero (.*) into the calculator")]
-        public void GivenTheUserEntersASecondInputNumberThatIsNotZeroIntoTheCalculator(double input)
+        public void GivenTheUserEntersASecondInputNumberThatIsNotZeroIntoTheCalculator(double nonZeroInput)
         {
-            _calculator.Input2 = input;
+            _calculator.Input2 = nonZeroInput;
         }
 
         [Given(@"the user enters the numbers below into a list")]
