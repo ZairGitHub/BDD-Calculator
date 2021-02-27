@@ -89,12 +89,12 @@ Scenario Outline: SquareRoot
 	| 9     | 3		 |
 
 Scenario: Divide cannot divide by zero error message
-	And I enter a second input number of zero into the calculator
+	And the user enters a second input number of zero into the calculator
 	When the user presses divide
 	Then the result should display a division error message
 
 Scenario: Modulo cannot divide by zero error message
-	And I enter a second input number of zero into the calculator
+	And the user enters a second input number of zero into the calculator
 	When the user presses modulo
 	Then the result should display a division error message
 
@@ -109,12 +109,12 @@ Scenario: SquareRoot cannot accept negative numbers error message
 	Then the result should display an argument error message
 
 Scenario: Divide cannot divide by zero error result
-	And I enter a second input number of zero into the calculator
+	And the user enters a second input number of zero into the calculator
 	When the user presses divide
 	Then the result should not display a valid number
 
 Scenario: Modulo cannot divide by zero error result
-	And I enter a second input number of zero into the calculator
+	And the user enters a second input number of zero into the calculator
 	When the user presses modulo
 	Then the result should not display a valid number
 
