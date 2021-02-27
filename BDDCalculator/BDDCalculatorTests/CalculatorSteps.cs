@@ -147,8 +147,8 @@ namespace BDDCalculator
                 .With.Message.EqualTo("Cannot divide by zero."));
         }
 
-        [Then(@"the result should display an argument error message")]
-        public void ThenTheResultShouldDisplayAnArgumentErrorMessage()
+        [Then(@"the calculator should display an argument error message")]
+        public void ThenTheCalculatorShouldDisplayAnArgumentErrorMessage()
         {
             Assert.That(_calculator.Exception, Is.TypeOf<ArgumentException>()
                 .With.Message.EqualTo("Cannot square root negative numbers"));
