@@ -136,7 +136,7 @@ Scenario: SumOfEvenNumbers
 	| 3       |
 	| 4       |
 	| 5       |
-	When I iterate through the list to select all even numbers
+	When the calculator iterates through the list to select all even numbers
 	And I add the selected numbers of the list together
 	Then the calculator should display a result should be equal to 6
 
@@ -148,6 +148,6 @@ Scenario: SumOfOddNumbers
 	| 3       |
 	| 4       |
 	| 5       |
-	When I iterate through the list to select all odd numbers
+	When the calculator iterates through the list to select all odd numbers
 	And I add the selected numbers of the list together
 	Then the calculator should display a result should be equal to 9

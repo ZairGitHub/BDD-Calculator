@@ -877,10 +877,10 @@ this.FeatureBackground();
                 table1.AddRow(new string[] {
                             "5"});
 #line 132
- testRunner.And("I enter the numbers below into a list", ((string)(null)), table1, "And ");
+ testRunner.And("the user enters the numbers below into a list", ((string)(null)), table1, "And ");
 #line hidden
 #line 139
- testRunner.When("I iterate through the list to select all even numbers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the calculator iterates through the list to select all even numbers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 140
  testRunner.And("I add the selected numbers of the list together", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -935,10 +935,10 @@ this.FeatureBackground();
                 table2.AddRow(new string[] {
                             "5"});
 #line 144
- testRunner.And("I enter the numbers below into a list", ((string)(null)), table2, "And ");
+ testRunner.And("the user enters the numbers below into a list", ((string)(null)), table2, "And ");
 #line hidden
 #line 151
- testRunner.When("I iterate through the list to select all odd numbers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the calculator iterates through the list to select all odd numbers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 152
  testRunner.And("I add the selected numbers of the list together", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

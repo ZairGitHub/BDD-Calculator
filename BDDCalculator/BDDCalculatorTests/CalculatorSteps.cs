@@ -122,14 +122,14 @@ namespace BDDCalculator
             _result = _calculator.SquareRoot();
         }
 
-        [When(@"I iterate through the list to select all even numbers")]
-        public void WhenIIterateThroughTheListToSelectAllEvenNumbers()
+        [When(@"the calculator iterates through the list to select all even numbers")]
+        public void WhenTheCalculatorIteratesThroughTheListToSelectAllEvenNumbers()
         {
             _calculator.IterateAndSelectEvenNumbers();
         }
 
-        [When(@"I iterate through the list to select all odd numbers")]
-        public void WhenIIterateThroughTheListToSelectAllOddNumbers()
+        [When(@"the calculator iterates through the list to select all odd numbers")]
+        public void WhenTheCalculatorIteratesThroughTheListToSelectAllOddNumbers()
         {
             _calculator.IterateAndSelectOddNumbers();
         }
