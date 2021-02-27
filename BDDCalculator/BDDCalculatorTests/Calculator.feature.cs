@@ -85,18 +85,25 @@ namespace BDDCalculatorTests
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Addition")]
+        [NUnit.Framework.CategoryAttribute("operation")]
         [NUnit.Framework.TestCaseAttribute("1", "-1", "0", null)]
         [NUnit.Framework.TestCaseAttribute("1", "0", "1", null)]
         [NUnit.Framework.TestCaseAttribute("1", "1", "2", null)]
         public virtual void Addition(string input1, string input2, string result, string[] exampleTags)
         {
-            string[] tagsOfScenario = exampleTags;
+            string[] @__tags = new string[] {
+                    "operation"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("input1", input1);
             argumentsOfScenario.Add("input2", input2);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Addition", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 7
+#line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -119,16 +126,16 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-#line 8
+#line 9
  testRunner.And(string.Format("the user enters any first input number {0} into the calculator", input1), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 9
+#line 10
  testRunner.And(string.Format("the user enters any second input number {0} into the calculator", input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 10
+#line 11
  testRunner.When("the user presses add", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 11
+#line 12
  testRunner.Then(string.Format("the calculator should display a result that is equal to {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -137,18 +144,25 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Subtract")]
+        [NUnit.Framework.CategoryAttribute("operation")]
         [NUnit.Framework.TestCaseAttribute("1", "-1", "2", null)]
         [NUnit.Framework.TestCaseAttribute("1", "0", "1", null)]
         [NUnit.Framework.TestCaseAttribute("1", "1", "0", null)]
         public virtual void Subtract(string input1, string input2, string result, string[] exampleTags)
         {
-            string[] tagsOfScenario = exampleTags;
+            string[] @__tags = new string[] {
+                    "operation"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("input1", input1);
             argumentsOfScenario.Add("input2", input2);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Subtract", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 18
+#line 20
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -171,16 +185,16 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-#line 19
+#line 21
  testRunner.And(string.Format("the user enters any first input number {0} into the calculator", input1), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 20
+#line 22
  testRunner.And(string.Format("the user enters any second input number {0} into the calculator", input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 21
+#line 23
  testRunner.When("the user presses subtract", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 22
+#line 24
  testRunner.Then(string.Format("the calculator should display a result that is equal to {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -189,18 +203,25 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Multiply")]
+        [NUnit.Framework.CategoryAttribute("operation")]
         [NUnit.Framework.TestCaseAttribute("1", "-1", "-1", null)]
         [NUnit.Framework.TestCaseAttribute("1", "0", "0", null)]
         [NUnit.Framework.TestCaseAttribute("1", "1", "1", null)]
         public virtual void Multiply(string input1, string input2, string result, string[] exampleTags)
         {
-            string[] tagsOfScenario = exampleTags;
+            string[] @__tags = new string[] {
+                    "operation"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("input1", input1);
             argumentsOfScenario.Add("input2", input2);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiply", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 29
+#line 32
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -223,16 +244,16 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-#line 30
+#line 33
  testRunner.And(string.Format("the user enters any first input number {0} into the calculator", input1), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 31
+#line 34
  testRunner.And(string.Format("the user enters any second input number {0} into the calculator", input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 32
+#line 35
  testRunner.When("the user presses multiply", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 33
+#line 36
  testRunner.Then(string.Format("the calculator should display a result that is equal to {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -241,17 +262,24 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Divide")]
+        [NUnit.Framework.CategoryAttribute("operation")]
         [NUnit.Framework.TestCaseAttribute("1", "-1", "-1", null)]
         [NUnit.Framework.TestCaseAttribute("1", "1", "1", null)]
         public virtual void Divide(string input1, string input2, string result, string[] exampleTags)
         {
-            string[] tagsOfScenario = exampleTags;
+            string[] @__tags = new string[] {
+                    "operation"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("input1", input1);
             argumentsOfScenario.Add("input2", input2);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Divide", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 40
+#line 44
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -274,16 +302,16 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-#line 41
+#line 45
  testRunner.And(string.Format("the user enters any first input number {0} into the calculator", input1), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 42
+#line 46
  testRunner.And(string.Format("the user enters a second input number that is not zero {0} into the calculator", input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 43
+#line 47
  testRunner.When("the user presses divide", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 44
+#line 48
  testRunner.Then(string.Format("the calculator should display a result that is equal to {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -292,17 +320,24 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Modulo")]
+        [NUnit.Framework.CategoryAttribute("operation")]
         [NUnit.Framework.TestCaseAttribute("1", "-1", "0", null)]
         [NUnit.Framework.TestCaseAttribute("1", "1", "0", null)]
         public virtual void Modulo(string input1, string input2, string result, string[] exampleTags)
         {
-            string[] tagsOfScenario = exampleTags;
+            string[] @__tags = new string[] {
+                    "operation"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("input1", input1);
             argumentsOfScenario.Add("input2", input2);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Modulo", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 50
+#line 55
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -325,16 +360,16 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-#line 51
+#line 56
  testRunner.And(string.Format("the user enters any first input number {0} into the calculator", input1), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 52
+#line 57
  testRunner.And(string.Format("the user enters a second input number that is not zero {0} into the calculator", input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 53
+#line 58
  testRunner.When("the user presses modulo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 54
+#line 59
  testRunner.Then(string.Format("the calculator should display a result that is equal to {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -343,17 +378,24 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Reciprocal")]
+        [NUnit.Framework.CategoryAttribute("operation")]
         [NUnit.Framework.TestCaseAttribute("1", "1", null)]
         [NUnit.Framework.TestCaseAttribute("2", "0.5", null)]
         [NUnit.Framework.TestCaseAttribute("-2", "-0.5", null)]
         public virtual void Reciprocal(string input, string result, string[] exampleTags)
         {
-            string[] tagsOfScenario = exampleTags;
+            string[] @__tags = new string[] {
+                    "operation"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("input", input);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Reciprocal", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 60
+#line 66
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -376,13 +418,13 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-#line 61
+#line 67
  testRunner.And(string.Format("the user enters a first input number that is not zero {0} into the calculator", input), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 62
+#line 68
  testRunner.When("the user presses reciprocal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 63
+#line 69
  testRunner.Then(string.Format("the calculator should display a result that is equal to {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -391,18 +433,25 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Exponent")]
+        [NUnit.Framework.CategoryAttribute("operation")]
         [NUnit.Framework.TestCaseAttribute("1", "2", "1", null)]
         [NUnit.Framework.TestCaseAttribute("2", "2", "4", null)]
         [NUnit.Framework.TestCaseAttribute("3", "2", "9", null)]
         public virtual void Exponent(string input1, string exponent, string result, string[] exampleTags)
         {
-            string[] tagsOfScenario = exampleTags;
+            string[] @__tags = new string[] {
+                    "operation"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("input1", input1);
             argumentsOfScenario.Add("exponent", exponent);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Exponent", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 70
+#line 77
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -425,16 +474,16 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-#line 71
+#line 78
  testRunner.And(string.Format("the user enters any first input number {0} into the calculator", input1), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 72
+#line 79
  testRunner.And(string.Format("the user enters any second input number {0} into the calculator", exponent), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 73
+#line 80
  testRunner.When("the user presses exponent", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 74
+#line 81
  testRunner.Then(string.Format("the calculator should display a result that is equal to {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -443,17 +492,24 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("SquareRoot")]
+        [NUnit.Framework.CategoryAttribute("operation")]
         [NUnit.Framework.TestCaseAttribute("0", "0", null)]
         [NUnit.Framework.TestCaseAttribute("1", "1", null)]
         [NUnit.Framework.TestCaseAttribute("9", "3", null)]
         public virtual void SquareRoot(string input, string result, string[] exampleTags)
         {
-            string[] tagsOfScenario = exampleTags;
+            string[] @__tags = new string[] {
+                    "operation"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("input", input);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("SquareRoot", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 81
+#line 89
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -476,14 +532,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-#line 82
+#line 90
  testRunner.And(string.Format("the user enters a first input number that is zero or positive {0} into the calcul" +
                             "ator", input), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 83
+#line 91
  testRunner.When("the user presses squareroot", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 84
+#line 92
  testRunner.Then(string.Format("the calculator should display a result that is equal to {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -492,12 +548,14 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Divide cannot divide by zero error message")]
+        [NUnit.Framework.CategoryAttribute("arithmetic-error")]
         public virtual void DivideCannotDivideByZeroErrorMessage()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "arithmetic-error"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Divide cannot divide by zero error message", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 91
+#line 100
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -520,13 +578,13 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-#line 92
+#line 101
  testRunner.And("the user enters a second input number of zero into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 93
+#line 102
  testRunner.When("the user presses divide", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 94
+#line 103
  testRunner.Then("the calculator should display a division error message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -535,97 +593,13 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Modulo cannot divide by zero error message")]
+        [NUnit.Framework.CategoryAttribute("arithmetic-error")]
         public virtual void ModuloCannotDivideByZeroErrorMessage()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "arithmetic-error"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Modulo cannot divide by zero error message", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 96
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 4
-this.FeatureBackground();
-#line hidden
-#line 97
- testRunner.And("the user enters a second input number of zero into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 98
- testRunner.When("the user presses modulo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 99
- testRunner.Then("the calculator should display a division error message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Reciprocal cannot divide by zero error message")]
-        public virtual void ReciprocalCannotDivideByZeroErrorMessage()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Reciprocal cannot divide by zero error message", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 101
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 4
-this.FeatureBackground();
-#line hidden
-#line 102
- testRunner.And("the user enters a first input number of zero into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 103
- testRunner.When("the user presses reciprocal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 104
- testRunner.Then("the calculator should display a division error message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("SquareRoot cannot accept negative numbers error message")]
-        public virtual void SquareRootCannotAcceptNegativeNumbersErrorMessage()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("SquareRoot cannot accept negative numbers error message", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 106
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -650,12 +624,102 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 107
- testRunner.And("the user enters a first input number that is negative -1 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the user enters a second input number of zero into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 108
- testRunner.When("the user presses squareroot", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user presses modulo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 109
+ testRunner.Then("the calculator should display a division error message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Reciprocal cannot divide by zero error message")]
+        [NUnit.Framework.CategoryAttribute("arithmetic-error")]
+        public virtual void ReciprocalCannotDivideByZeroErrorMessage()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "arithmetic-error"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Reciprocal cannot divide by zero error message", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 112
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 4
+this.FeatureBackground();
+#line hidden
+#line 113
+ testRunner.And("the user enters a first input number of zero into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 114
+ testRunner.When("the user presses reciprocal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 115
+ testRunner.Then("the calculator should display a division error message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("SquareRoot cannot accept negative numbers error message")]
+        [NUnit.Framework.CategoryAttribute("arithmetic-error")]
+        public virtual void SquareRootCannotAcceptNegativeNumbersErrorMessage()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "arithmetic-error"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("SquareRoot cannot accept negative numbers error message", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 118
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 4
+this.FeatureBackground();
+#line hidden
+#line 119
+ testRunner.And("the user enters a first input number that is negative -1 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 120
+ testRunner.When("the user presses squareroot", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 121
  testRunner.Then("the calculator should display an argument error message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -664,12 +728,14 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Divide cannot divide by zero error result")]
+        [NUnit.Framework.CategoryAttribute("arithmetic-error")]
         public virtual void DivideCannotDivideByZeroErrorResult()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "arithmetic-error"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Divide cannot divide by zero error result", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 111
+#line 124
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -692,13 +758,13 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-#line 112
+#line 125
  testRunner.And("the user enters a second input number of zero into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 113
+#line 126
  testRunner.When("the user presses divide", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 114
+#line 127
  testRunner.Then("the calculator should display a result that is not a valid number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -707,12 +773,14 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Modulo cannot divide by zero error result")]
+        [NUnit.Framework.CategoryAttribute("arithmetic-error")]
         public virtual void ModuloCannotDivideByZeroErrorResult()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "arithmetic-error"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Modulo cannot divide by zero error result", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 116
+#line 130
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -735,13 +803,13 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-#line 117
+#line 131
  testRunner.And("the user enters a second input number of zero into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 118
+#line 132
  testRunner.When("the user presses modulo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 119
+#line 133
  testRunner.Then("the calculator should display a result that is not a valid number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -750,12 +818,14 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Reciprocal cannot divide by zero error result")]
+        [NUnit.Framework.CategoryAttribute("arithmetic-error")]
         public virtual void ReciprocalCannotDivideByZeroErrorResult()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "arithmetic-error"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Reciprocal cannot divide by zero error result", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 121
+#line 136
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -778,13 +848,13 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-#line 122
+#line 137
  testRunner.And("the user enters a first input number of zero into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 123
+#line 138
  testRunner.When("the user presses reciprocal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 124
+#line 139
  testRunner.Then("the calculator should display a result that is not a valid number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -793,12 +863,14 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("SquareRoot cannot accept negative numbers error result")]
+        [NUnit.Framework.CategoryAttribute("arithmetic-error")]
         public virtual void SquareRootCannotAcceptNegativeNumbersErrorResult()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "arithmetic-error"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("SquareRoot cannot accept negative numbers error result", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 126
+#line 142
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -821,13 +893,13 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-#line 127
+#line 143
  testRunner.And("the user enters a first input number that is negative -1 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 128
+#line 144
  testRunner.When("the user presses squareroot", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 129
+#line 145
  testRunner.Then("the calculator should display a result that is not a valid number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -836,12 +908,14 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("SumOfEvenNumbers")]
+        [NUnit.Framework.CategoryAttribute("dataset")]
         public virtual void SumOfEvenNumbers()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "dataset"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("SumOfEvenNumbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 131
+#line 148
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -876,16 +950,16 @@ this.FeatureBackground();
                             "4"});
                 table1.AddRow(new string[] {
                             "5"});
-#line 132
+#line 149
  testRunner.And("the user enters the numbers below into a list", ((string)(null)), table1, "And ");
 #line hidden
-#line 139
+#line 156
  testRunner.When("the calculator iterates through the list to select all even numbers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 140
+#line 157
  testRunner.And("the calculator adds the selected numbers of the list together", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 141
+#line 158
  testRunner.Then("the calculator should display a result that is equal to 6", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -894,12 +968,14 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("SumOfOddNumbers")]
+        [NUnit.Framework.CategoryAttribute("dataset")]
         public virtual void SumOfOddNumbers()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "dataset"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("SumOfOddNumbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 143
+#line 161
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -934,16 +1010,16 @@ this.FeatureBackground();
                             "4"});
                 table2.AddRow(new string[] {
                             "5"});
-#line 144
+#line 162
  testRunner.And("the user enters the numbers below into a list", ((string)(null)), table2, "And ");
 #line hidden
-#line 151
+#line 169
  testRunner.When("the calculator iterates through the list to select all odd numbers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 152
+#line 170
  testRunner.And("the calculator adds the selected numbers of the list together", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 153
+#line 171
  testRunner.Then("the calculator should display a result that is equal to 9", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
