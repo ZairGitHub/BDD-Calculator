@@ -111,22 +111,22 @@ Scenario: SquareRoot cannot accept negative numbers error message
 Scenario: Divide cannot divide by zero error result
 	And the user enters a second input number of zero into the calculator
 	When the user presses divide
-	Then the result should not display a valid number
+	Then the calculator should display a result that is not a valid number
 
 Scenario: Modulo cannot divide by zero error result
 	And the user enters a second input number of zero into the calculator
 	When the user presses modulo
-	Then the result should not display a valid number
+	Then the calculator should display a result that is not a valid number
 
 Scenario: Reciprocal cannot divide by zero error result
 	And I enter a first input number of zero into the calculator
 	When the user presses reciprocal
-	Then the result should not display a valid number
+	Then the calculator should display a result that is not a valid number
 
 Scenario: SquareRoot cannot accept negative numbers error result
 	And I enter a first input number that is negative -1 into the calculator
 	When the user presses squareroot
-	Then the result should not display a valid number
+	Then the calculator should display a result that is not a valid number
 
 Scenario: SumOfEvenNumbers
 	And I enter the numbers below into a list

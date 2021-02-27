@@ -154,8 +154,8 @@ namespace BDDCalculator
                 .With.Message.EqualTo("Cannot square root negative numbers"));
         }
 
-        [Then(@"the result should not display a valid number")]
-        public void ThenTheResultShouldNotDisplayAValidNumber()
+        [Then(@"the calculator should display a result that is not a valid number")]
+        public void ThenTheCalculatorShouldDisplayAResultThatIsNotAValidNumber()
         {
             Assert.That(_result, Is.NaN);
         }
