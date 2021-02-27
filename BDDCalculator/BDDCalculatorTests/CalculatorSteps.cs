@@ -69,28 +69,52 @@ namespace BDDCalculator
         }
 
         [When(@"the user presses add")]
-        public void WhenTheUserPressesAdd() => _result = _calculator.Add();
+        public void WhenTheUserPressesAdd()
+        {
+            _result = _calculator.Add();
+        }
 
-        [When(@"I press subtract")]
-        public void WhenIPressSubtract() => _result = _calculator.Subtract();
+        [When(@"the user presses subtract")]
+        public void WhenTheUserPressesSubtract()
+        {
+            _result = _calculator.Subtract();
+        }
 
-        [When(@"I press multiply")]
-        public void WhenIPressMultiply() => _result = _calculator.Multiply();
+        [When(@"the user presses multiply")]
+        public void WhenTheUserPressesMultiply()
+        {
+            _result = _calculator.Multiply();
+        }
 
-        [When(@"I press divide")]
-        public void WhenIPressDivide() => _result = _calculator.Divide();
+        [When(@"the user presses divide")]
+        public void WhenTheUserPressesDivide()
+        {
+            _result = _calculator.Divide();
+        }
 
-        [When(@"I press modulo")]
-        public void WhenIPressModulo() => _result = _calculator.Modulo();
+        [When(@"the user presses modulo")]
+        public void WhenTheUserPressesModulo()
+        {
+            _result = _calculator.Modulo();
+        }
 
-        [When(@"I press reciprocal")]
-        public void WhenIPressReciprocal() => _result = _calculator.Reciprocal();
+        [When(@"the user presses reciprocal")]
+        public void WhenTheUserPressesReciprocal()
+        {
+            _result = _calculator.Reciprocal();
+        }
 
-        [When(@"I press exponent")]
-        public void WhenIPressExponent() => _result = _calculator.Exponent();
+        [When(@"the user presses exponent")]
+        public void WhenTheUserPressesExponent()
+        {
+            _result = _calculator.Exponent();
+        }
 
-        [When(@"I press squareroot")]
-        public void WhenIPressSquareRoot() => _result = _calculator.SquareRoot();
+        [When(@"the user presses squareroot")]
+        public void WhenTheUserPressesSquareroot()
+        {
+            _result = _calculator.SquareRoot();
+        }
 
         [When(@"I iterate through the list to select all even numbers")]
         public void WhenIIterateThroughTheListToSelectAllEvenNumbers()

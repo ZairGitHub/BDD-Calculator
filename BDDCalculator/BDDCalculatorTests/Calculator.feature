@@ -18,7 +18,7 @@ Scenario Outline: Addition
 Scenario Outline: Subtract
 	And the user enters any first input number <input1> into the calculator
 	And the user enters any second input number <input2> into the calculator
-	When I press subtract
+	When the user presses subtract
 	Then the calculator should display a result should be equal to <result>
 	Examples:
 	| input1 | input2 | result |
@@ -29,7 +29,7 @@ Scenario Outline: Subtract
 Scenario Outline: Multiply
 	And the user enters any first input number <input1> into the calculator
 	And the user enters any second input number <input2> into the calculator
-	When I press multiply
+	When the user presses multiply
 	Then the calculator should display a result should be equal to <result>
 	Examples:
 	| input1 | input2 | result |
@@ -40,7 +40,7 @@ Scenario Outline: Multiply
 Scenario Outline: Divide
 	And the user enters any first input number <input1> into the calculator
 	And I enter a second input number that is not zero <input2> into the calculator
-	When I press divide
+	When the user presses divide
 	Then the calculator should display a result should be equal to <result>
 	Examples:
 	| input1 | input2 | result |
@@ -50,7 +50,7 @@ Scenario Outline: Divide
 Scenario Outline: Modulo
 	And the user enters any first input number <input1> into the calculator
 	And I enter a second input number that is not zero <input2> into the calculator
-	When I press modulo
+	When the user presses modulo
 	Then the calculator should display a result should be equal to <result>
 	Examples:
 	| input1 | input2 | result |
@@ -59,7 +59,7 @@ Scenario Outline: Modulo
 
 Scenario Outline: Reciprocal
 	And I enter a first input number that is not zero <input> into the calculator
-	When I press reciprocal
+	When the user presses reciprocal
 	Then the calculator should display a result should be equal to <result>
 	Examples:
 	| input  | result |
@@ -70,7 +70,7 @@ Scenario Outline: Reciprocal
 Scenario Outline: Exponent
 	And the user enters any first input number <input1> into the calculator
 	And the user enters any second input number <exponent> into the calculator
-	When I press exponent
+	When the user presses exponent
 	Then the calculator should display a result should be equal to <result>
 	Examples:
 	| input1 | exponent | result |
@@ -80,7 +80,7 @@ Scenario Outline: Exponent
 
 Scenario Outline: SquareRoot
 	And I enter a first input number that is zero or positive <input> into the calculator
-	When I press squareroot
+	When the user presses squareroot
 	Then the calculator should display a result should be equal to <result>
 	Examples:
 	| input | result |
@@ -90,42 +90,42 @@ Scenario Outline: SquareRoot
 
 Scenario: Divide cannot divide by zero error message
 	And I enter a second input number of zero into the calculator
-	When I press divide
+	When the user presses divide
 	Then the result should display a division error message
 
 Scenario: Modulo cannot divide by zero error message
 	And I enter a second input number of zero into the calculator
-	When I press modulo
+	When the user presses modulo
 	Then the result should display a division error message
 
 Scenario: Reciprocal cannot divide by zero error message
 	And I enter a first input number of zero into the calculator
-	When I press reciprocal
+	When the user presses reciprocal
 	Then the result should display a division error message
 
 Scenario: SquareRoot cannot accept negative numbers error message
 	And I enter a first input number that is negative -1 into the calculator
-	When I press squareroot
+	When the user presses squareroot
 	Then the result should display an argument error message
 
 Scenario: Divide cannot divide by zero error result
 	And I enter a second input number of zero into the calculator
-	When I press divide
+	When the user presses divide
 	Then the result should not display a valid number
 
 Scenario: Modulo cannot divide by zero error result
 	And I enter a second input number of zero into the calculator
-	When I press modulo
+	When the user presses modulo
 	Then the result should not display a valid number
 
 Scenario: Reciprocal cannot divide by zero error result
 	And I enter a first input number of zero into the calculator
-	When I press reciprocal
+	When the user presses reciprocal
 	Then the result should not display a valid number
 
 Scenario: SquareRoot cannot accept negative numbers error result
 	And I enter a first input number that is negative -1 into the calculator
-	When I press squareroot
+	When the user presses squareroot
 	Then the result should not display a valid number
 
 Scenario: SumOfEvenNumbers

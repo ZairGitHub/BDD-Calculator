@@ -178,7 +178,7 @@ this.FeatureBackground();
  testRunner.And(string.Format("the user enters any second input number {0} into the calculator", input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 21
- testRunner.When("I press subtract", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user presses subtract", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 22
  testRunner.Then(string.Format("the calculator should display a result should be equal to {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -230,7 +230,7 @@ this.FeatureBackground();
  testRunner.And(string.Format("the user enters any second input number {0} into the calculator", input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 32
- testRunner.When("I press multiply", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user presses multiply", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 33
  testRunner.Then(string.Format("the calculator should display a result should be equal to {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -281,7 +281,7 @@ this.FeatureBackground();
  testRunner.And(string.Format("I enter a second input number that is not zero {0} into the calculator", input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 43
- testRunner.When("I press divide", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user presses divide", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 44
  testRunner.Then(string.Format("the calculator should display a result should be equal to {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -332,7 +332,7 @@ this.FeatureBackground();
  testRunner.And(string.Format("I enter a second input number that is not zero {0} into the calculator", input2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 53
- testRunner.When("I press modulo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user presses modulo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 54
  testRunner.Then(string.Format("the calculator should display a result should be equal to {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -380,7 +380,7 @@ this.FeatureBackground();
  testRunner.And(string.Format("I enter a first input number that is not zero {0} into the calculator", input), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 62
- testRunner.When("I press reciprocal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user presses reciprocal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 63
  testRunner.Then(string.Format("the calculator should display a result should be equal to {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -432,7 +432,7 @@ this.FeatureBackground();
  testRunner.And(string.Format("the user enters any second input number {0} into the calculator", exponent), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 73
- testRunner.When("I press exponent", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user presses exponent", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 74
  testRunner.Then(string.Format("the calculator should display a result should be equal to {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -480,7 +480,7 @@ this.FeatureBackground();
  testRunner.And(string.Format("I enter a first input number that is zero or positive {0} into the calculator", input), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 83
- testRunner.When("I press squareroot", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user presses squareroot", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 84
  testRunner.Then(string.Format("the calculator should display a result should be equal to {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -523,7 +523,7 @@ this.FeatureBackground();
  testRunner.And("I enter a second input number of zero into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 93
- testRunner.When("I press divide", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user presses divide", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 94
  testRunner.Then("the result should display a division error message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -566,7 +566,7 @@ this.FeatureBackground();
  testRunner.And("I enter a second input number of zero into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 98
- testRunner.When("I press modulo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user presses modulo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 99
  testRunner.Then("the result should display a division error message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -609,7 +609,7 @@ this.FeatureBackground();
  testRunner.And("I enter a first input number of zero into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 103
- testRunner.When("I press reciprocal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user presses reciprocal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 104
  testRunner.Then("the result should display a division error message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -652,7 +652,7 @@ this.FeatureBackground();
  testRunner.And("I enter a first input number that is negative -1 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 108
- testRunner.When("I press squareroot", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user presses squareroot", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 109
  testRunner.Then("the result should display an argument error message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -695,7 +695,7 @@ this.FeatureBackground();
  testRunner.And("I enter a second input number of zero into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 113
- testRunner.When("I press divide", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user presses divide", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 114
  testRunner.Then("the result should not display a valid number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -738,7 +738,7 @@ this.FeatureBackground();
  testRunner.And("I enter a second input number of zero into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 118
- testRunner.When("I press modulo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user presses modulo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 119
  testRunner.Then("the result should not display a valid number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -781,7 +781,7 @@ this.FeatureBackground();
  testRunner.And("I enter a first input number of zero into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 123
- testRunner.When("I press reciprocal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user presses reciprocal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 124
  testRunner.Then("the result should not display a valid number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -824,7 +824,7 @@ this.FeatureBackground();
  testRunner.And("I enter a first input number that is negative -1 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 128
- testRunner.When("I press squareroot", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user presses squareroot", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 129
  testRunner.Then("the result should not display a valid number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
