@@ -79,7 +79,7 @@ Scenario Outline: Exponent
 	| 3      | 2        | 9      |
 
 Scenario Outline: SquareRoot
-	And I enter a first input number that is zero or positive <input> into the calculator
+	And the user enters a first input number that is zero or positive <input> into the calculator
 	When the user presses squareroot
 	Then the calculator should display a result should be equal to <result>
 	Examples:
