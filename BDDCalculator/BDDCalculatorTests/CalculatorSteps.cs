@@ -38,8 +38,8 @@ namespace BDDCalculator
             _calculator.Input1 = input;
         }
 
-        [Given(@"I enter a first input number that is negative (.*) into the calculator")]
-        public void GivenIEnterAFirstInputNumberThatIsNegativeIntoTheCalculator(double input)
+        [Given(@"the user enters a first input number that is negative (.*) into the calculator")]
+        public void GivenTheUserEntersAFirstInputNumberThatIsNegativeIntoTheCalculator(double input)
         {
             _calculator.Input1 = input;
         }

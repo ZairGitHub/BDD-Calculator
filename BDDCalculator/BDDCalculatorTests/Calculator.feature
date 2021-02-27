@@ -104,7 +104,7 @@ Scenario: Reciprocal cannot divide by zero error message
 	Then the calculator should display a division error message
 
 Scenario: SquareRoot cannot accept negative numbers error message
-	And I enter a first input number that is negative -1 into the calculator
+	And the user enters a first input number that is negative -1 into the calculator
 	When the user presses squareroot
 	Then the calculator should display an argument error message
 
@@ -124,7 +124,7 @@ Scenario: Reciprocal cannot divide by zero error result
 	Then the calculator should display a result that is not a valid number
 
 Scenario: SquareRoot cannot accept negative numbers error result
-	And I enter a first input number that is negative -1 into the calculator
+	And the user enters a first input number that is negative -1 into the calculator
 	When the user presses squareroot
 	Then the calculator should display a result that is not a valid number
 

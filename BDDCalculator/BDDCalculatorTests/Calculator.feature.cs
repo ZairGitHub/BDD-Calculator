@@ -650,7 +650,7 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 107
- testRunner.And("I enter a first input number that is negative -1 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the user enters a first input number that is negative -1 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 108
  testRunner.When("the user presses squareroot", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -822,7 +822,7 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 127
- testRunner.And("I enter a first input number that is negative -1 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the user enters a first input number that is negative -1 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 128
  testRunner.When("the user presses squareroot", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
