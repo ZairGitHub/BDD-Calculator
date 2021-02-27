@@ -134,8 +134,8 @@ namespace BDDCalculator
             _calculator.IterateAndSelectOddNumbers();
         }
 
-        [When(@"I add the selected numbers of the list together")]
-        public void WhenIAddTheSelectedNumbersOfTheListTogether()
+        [When(@"the calculator adds the selected numbers of the list together")]
+        public void WhenTheCalculatorAddsTheSelectedNumbersOfTheListTogether()
         {
             _result = _calculator.SumOfSelectedNumbers();
         }
@@ -160,8 +160,8 @@ namespace BDDCalculator
             Assert.That(_result, Is.NaN);
         }
 
-        [Then(@"the calculator should display a result should be equal to (.*)")]
-        public void ThenTheCalculatorShouldDisplayAResultShouldBeEqualTo(double expected)
+        [Then(@"the calculator should display a result that is equal to (.*)")]
+        public void ThenTheCalculatorShouldDisplayAResultThatIsEqualTo(double expected)
         {
             Assert.That(_result, Is.EqualTo(expected));
         }
