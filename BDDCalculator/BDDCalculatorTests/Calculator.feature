@@ -58,7 +58,7 @@ Scenario Outline: Modulo
 	| 1      | 1      | 0      |
 
 Scenario Outline: Reciprocal
-	And I enter a first input number that is not zero <input> into the calculator
+	And the user enters a first input number that is not zero <input> into the calculator
 	When the user presses reciprocal
 	Then the calculator should display a result should be equal to <result>
 	Examples:
