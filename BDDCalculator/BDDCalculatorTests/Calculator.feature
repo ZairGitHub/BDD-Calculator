@@ -99,7 +99,7 @@ Scenario: Modulo cannot divide by zero error message
 	Then the calculator should display a division error message
 
 Scenario: Reciprocal cannot divide by zero error message
-	And I enter a first input number of zero into the calculator
+	And the user enters a first input number of zero into the calculator
 	When the user presses reciprocal
 	Then the calculator should display a division error message
 
@@ -119,7 +119,7 @@ Scenario: Modulo cannot divide by zero error result
 	Then the calculator should display a result that is not a valid number
 
 Scenario: Reciprocal cannot divide by zero error result
-	And I enter a first input number of zero into the calculator
+	And the user enters a first input number of zero into the calculator
 	When the user presses reciprocal
 	Then the calculator should display a result that is not a valid number
 
