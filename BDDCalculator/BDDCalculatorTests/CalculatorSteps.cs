@@ -14,8 +14,8 @@ namespace BDDCalculator
         [Given(@"a user has a calculator")]
         public void GivenAUserHasACalculator() => _calculator = new Calculator();
 
-        [Given(@"I enter any first input number (.*) into the calculator")]
-        public void GivenIEnterAnyFirstInputNumberIntoTheCalculator(double input)
+        [Given(@"the user enters any first input number (.*) into the calculator")]
+        public void GivenTheUserEntersAnyFirstInputNumberIntoTheCalculator(double input)
         {
             _calculator.Input1 = input;
         }
@@ -44,8 +44,8 @@ namespace BDDCalculator
             _calculator.Input1 = input;
         }
 
-        [Given(@"I enter any second input number (.*) into the calculator")]
-        public void GivenIEnterAnySecondInputNumberIntoTheCalculator(double input)
+        [Given(@"the user enters any second input number (.*) into the calculator")]
+        public void GivenTheUserEntersAnySecondInputNumberIntoTheCalculator(double input)
         {
             _calculator.Input2 = input;
         }
@@ -68,8 +68,8 @@ namespace BDDCalculator
             _calculator.AddNumbersToList(table);
         }
 
-        [When(@"I press add")]
-        public void WhenIPressAdd() => _result = _calculator.Add();
+        [When(@"the user presses add")]
+        public void WhenTheUserPressesAdd() => _result = _calculator.Add();
 
         [When(@"I press subtract")]
         public void WhenIPressSubtract() => _result = _calculator.Subtract();
@@ -130,8 +130,8 @@ namespace BDDCalculator
             Assert.That(_result, Is.NaN);
         }
 
-        [Then(@"the result should be equal to (.*)")]
-        public void ThenTheResultShouldBeEqualTo(double expected)
+        [Then(@"the calculator should display a result should be equal to (.*)")]
+        public void ThenTheCalculatorShouldDisplayAResultShouldBeEqualTo(double expected)
         {
             Assert.That(_result, Is.EqualTo(expected));
         }

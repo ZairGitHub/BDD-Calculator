@@ -5,10 +5,10 @@ Background:
 	Given a user has a calculator
 
 Scenario Outline: Addition
-	And I enter any first input number <input1> into the calculator
-	And I enter any second input number <input2> into the calculator
-	When I press add
-	Then the result should be equal to <result>
+	And the user enters any first input number <input1> into the calculator
+	And the user enters any second input number <input2> into the calculator
+	When the user presses add
+	Then the calculator should display a result should be equal to <result>
 	Examples:
 	| input1 | input2 | result |
 	| 1      | -1     | 0      |
@@ -16,10 +16,10 @@ Scenario Outline: Addition
 	| 1		 | 1      | 2      |
 
 Scenario Outline: Subtract
-	And I enter any first input number <input1> into the calculator
-	And I enter any second input number <input2> into the calculator
+	And the user enters any first input number <input1> into the calculator
+	And the user enters any second input number <input2> into the calculator
 	When I press subtract
-	Then the result should be equal to <result>
+	Then the calculator should display a result should be equal to <result>
 	Examples:
 	| input1 | input2 | result |
 	| 1      | -1     | 2      |
@@ -27,10 +27,10 @@ Scenario Outline: Subtract
 	| 1		 | 1      | 0      |
 
 Scenario Outline: Multiply
-	And I enter any first input number <input1> into the calculator
-	And I enter any second input number <input2> into the calculator
+	And the user enters any first input number <input1> into the calculator
+	And the user enters any second input number <input2> into the calculator
 	When I press multiply
-	Then the result should be equal to <result>
+	Then the calculator should display a result should be equal to <result>
 	Examples:
 	| input1 | input2 | result |
 	| 1      | -1     | -1     |
@@ -38,20 +38,20 @@ Scenario Outline: Multiply
 	| 1		 | 1      | 1      |
 
 Scenario Outline: Divide
-	And I enter any first input number <input1> into the calculator
+	And the user enters any first input number <input1> into the calculator
 	And I enter a second input number that is not zero <input2> into the calculator
 	When I press divide
-	Then the result should be equal to <result>
+	Then the calculator should display a result should be equal to <result>
 	Examples:
 	| input1 | input2 | result |
 	| 1      | -1     | -1     |
 	| 1      | 1      | 1      |
 	
 Scenario Outline: Modulo
-	And I enter any first input number <input1> into the calculator
+	And the user enters any first input number <input1> into the calculator
 	And I enter a second input number that is not zero <input2> into the calculator
 	When I press modulo
-	Then the result should be equal to <result>
+	Then the calculator should display a result should be equal to <result>
 	Examples:
 	| input1 | input2 | result |
 	| 1      | -1     | 0      |
@@ -60,7 +60,7 @@ Scenario Outline: Modulo
 Scenario Outline: Reciprocal
 	And I enter a first input number that is not zero <input> into the calculator
 	When I press reciprocal
-	Then the result should be equal to <result>
+	Then the calculator should display a result should be equal to <result>
 	Examples:
 	| input  | result |
 	| 1      | 1      |
@@ -68,10 +68,10 @@ Scenario Outline: Reciprocal
 	| -2     | -0.5	  |
 
 Scenario Outline: Exponent
-	And I enter any first input number <input1> into the calculator
-	And I enter any second input number <exponent> into the calculator
+	And the user enters any first input number <input1> into the calculator
+	And the user enters any second input number <exponent> into the calculator
 	When I press exponent
-	Then the result should be equal to <result>
+	Then the calculator should display a result should be equal to <result>
 	Examples:
 	| input1 | exponent | result |
 	| 1      | 2        | 1      |
@@ -81,7 +81,7 @@ Scenario Outline: Exponent
 Scenario Outline: SquareRoot
 	And I enter a first input number that is zero or positive <input> into the calculator
 	When I press squareroot
-	Then the result should be equal to <result>
+	Then the calculator should display a result should be equal to <result>
 	Examples:
 	| input | result |
 	| 0     | 0		 |
@@ -138,7 +138,7 @@ Scenario: SumOfEvenNumbers
 	| 5       |
 	When I iterate through the list to select all even numbers
 	And I add the selected numbers of the list together
-	Then the result should be equal to 6
+	Then the calculator should display a result should be equal to 6
 
 Scenario: SumOfOddNumbers
 	And I enter the numbers below into a list
@@ -150,4 +150,4 @@ Scenario: SumOfOddNumbers
 	| 5       |
 	When I iterate through the list to select all odd numbers
 	And I add the selected numbers of the list together
-	Then the result should be equal to 9
+	Then the calculator should display a result should be equal to 9
