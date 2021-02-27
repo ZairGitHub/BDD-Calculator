@@ -129,7 +129,7 @@ Scenario: SquareRoot cannot accept negative numbers error result
 	Then the calculator should display a result that is not a valid number
 
 Scenario: SumOfEvenNumbers
-	And I enter the numbers below into a list
+	And the user enters the numbers below into a list
 	| numbers |
 	| 1       |
 	| 2       |
@@ -141,7 +141,7 @@ Scenario: SumOfEvenNumbers
 	Then the calculator should display a result should be equal to 6
 
 Scenario: SumOfOddNumbers
-	And I enter the numbers below into a list
+	And the user enters the numbers below into a list
 	| numbers |
 	| 1       |
 	| 2       |

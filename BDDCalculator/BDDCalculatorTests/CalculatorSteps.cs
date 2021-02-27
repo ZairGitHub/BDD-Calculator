@@ -68,8 +68,8 @@ namespace BDDCalculator
             _calculator.Input2 = input;
         }
 
-        [Given(@"I enter the numbers below into a list")]
-        public void GivenIEnterTheNumbersBelowIntoAList(Table table)
+        [Given(@"the user enters the numbers below into a list")]
+        public void GivenTheUserEntersTheNumbersBelowIntoAList(Table table)
         {
             _calculator.AddNumbersToList(table);
         }
