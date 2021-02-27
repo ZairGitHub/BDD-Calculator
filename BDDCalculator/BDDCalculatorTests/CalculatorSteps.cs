@@ -140,8 +140,8 @@ namespace BDDCalculator
             _result = _calculator.SumOfSelectedNumbers();
         }
 
-        [Then(@"the result should display a division error message")]
-        public void ThenTheResultShouldDisplayADivisionErrorMessage()
+        [Then(@"the calculator should display a division error message")]
+        public void ThenTheCalculatorShouldDisplayADivisionErrorMessage()
         {
             Assert.That(_calculator.Exception, Is.TypeOf<DivideByZeroException>()
                 .With.Message.EqualTo("Cannot divide by zero."));

@@ -91,17 +91,17 @@ Scenario Outline: SquareRoot
 Scenario: Divide cannot divide by zero error message
 	And the user enters a second input number of zero into the calculator
 	When the user presses divide
-	Then the result should display a division error message
+	Then the calculator should display a division error message
 
 Scenario: Modulo cannot divide by zero error message
 	And the user enters a second input number of zero into the calculator
 	When the user presses modulo
-	Then the result should display a division error message
+	Then the calculator should display a division error message
 
 Scenario: Reciprocal cannot divide by zero error message
 	And I enter a first input number of zero into the calculator
 	When the user presses reciprocal
-	Then the result should display a division error message
+	Then the calculator should display a division error message
 
 Scenario: SquareRoot cannot accept negative numbers error message
 	And I enter a first input number that is negative -1 into the calculator
